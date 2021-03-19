@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css"/>
+    <script src="https://kit.fontawesome.com/b7a99077b9.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {emailjs.init("user_12r8qbCQeqvZWHaDwVX7o");
+})();
+</script>
+
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
@@ -130,10 +139,57 @@
 
     </section>
 
-    <section class="form">
-        <form>
-
-        </form>
+    <section id="contact">
+        <div id="left-form">
+            <h1>Contactez-nous</h1>
+            <p>Pour toute information supplémentaire, n'hésitez pas à :</p>
+            <ul>
+                <li><i class="fas fa-check-circle"></i>   Nous écrire un petit message</li>
+                <li><i class="fas fa-check-circle"></i>   Nous faire une suggestion</li>
+                <li><i class="fas fa-check-circle"></i>   Rester en contact avec nous</li>
+            </ul>
+    
+            <img src="Image-form/Image-formulaire.svg">
+        </div>
+        <div class="form-container">
+    
+            <form onsubmit="sendMail(event)" id="contact-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nom</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
+                </div>
+    
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Votre email" required>
+                </div>
+    
+                <div class="form-group">
+                    <p>Choisissez votre catégorie</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Selectionner une catégorie</option>
+                        <option value="particulier">Particulier</option>
+                        <option value="entreprise">Entreprise</option>
+                    </select>
+                </div>
+    
+                    <div class="form-group">
+                    <label id="object-label" for="object">Objet</label>
+                    <input type="text" name="object" id="object" class="form-control" placeholder="Objet du message" required>
+                    </div>
+    
+                <div class="form-group">
+                    <p>Écrivez votre message</p>
+                    <textarea id="comments" class="input-textarea" placeholder="Votre message" required ></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">Envoyer</button>
+                </div>
+            </div>
+            </form >
+            <p id="msgSend"></p>
+        </div>
     </section>
 
 

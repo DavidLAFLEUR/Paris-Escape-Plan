@@ -1,0 +1,164 @@
+body {
+    display:flex;
+    align-items: center;
+}
+
+#left-form h1 {
+    font-size:40px;
+    color:#52676D;
+    text-align: center;
+}
+
+#left-form p  {
+    color:#52676D;
+    text-align: center;
+    padding: 25px;
+    font-size:20px
+}
+
+#left-form li {
+    font-size: 20px;
+    color:#52676D;
+    margin:40px 0px 30px 80px;
+    list-style-type: none;
+   
+}
+
+img {
+    height:350px;
+    margin: 60px 20px 20px 20px;
+}
+
+#left-form {
+    height:700px;
+}
+
+#contact-form {
+    padding:20px;
+    margin-right:20px;
+}
+
+#contact {
+    display:grid;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "left-form form-container";
+    margin: 20px;
+}
+
+
+#title {
+    font-weight: 400;
+    line-height: 1.2;
+    padding-top: 30px;
+  }
+  
+  p {
+    font-size: 1.125rem;
+  }
+  
+ h1, p, label {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color:white;
+  }
+  
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  input, button, select, textarea {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    width:70%;
+    height:10%;
+  }
+    
+  .form-container {
+    width: 50%;
+    margin: 3.125rem auto 0 auto;
+    background: linear-gradient(#5b737a, #51686E);
+    border-radius: 4px;
+  }
+  
+  .header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+  }
+  
+  
+  .clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* form */
+  
+  form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+  
+  .form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+  }
+  
+  .form-control {
+    display: block;
+    width: 90%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+
+  .input-textarea {
+    min-height: 120px;
+    width: 90%;
+    padding: 0.625rem;
+    resize: vertical;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 5px;
+  }
+  
+  #submit {
+    display: block;
+    width: 50%;
+    padding: 0.75rem;
+    background: #93C6CB;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border:none;
+    margin:auto;
+  }
+
+  #submit:hover {
+      background-color:#85B3B7;
+  }
