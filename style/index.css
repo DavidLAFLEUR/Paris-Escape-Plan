@@ -45,8 +45,7 @@ img {
     align-items: center;
     width:100vw;
     grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "left-form form-container";
+    grid-template-areas: "left-form form-container";
     margin: 20px;
 }
 
