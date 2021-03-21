@@ -1,5 +1,6 @@
-body {
-    display:flex;
+
+.contact {
+    display: flex;
     align-items: center;
 }
 
@@ -60,7 +61,7 @@ img {
     font-size: 1.125rem;
   }
   
- h1, p, label {
+ h6, p, label {
     margin-top: 0;
     margin-bottom: 0.5rem;
     color:white;
