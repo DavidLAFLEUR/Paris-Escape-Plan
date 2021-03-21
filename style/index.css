@@ -1,5 +1,109 @@
 body {
-    display:flex;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5% 25% 25% 25% 10% 10%;
+  grid-template-areas: 
+  "header"
+  "welcome"
+  "tips"
+  "lasttips"
+  "contact"
+  "footer"
+}
+
+header{
+  grid-area: header;
+  display: flex;
+  background-color: aqua;
+}
+
+.bienvenue{
+  grid-area: welcome;
+  display: flex;
+  background-color: bisque;
+
+}
+
+.bonPlans{
+  grid-area: tips;
+  display: flex;
+  background-color: #e5e5e5;
+}
+
+.bp{
+
+
+}
+#bp4{
+  display: grid;
+  border: 1px solide black;
+}
+
+.bonplan{
+
+}
+
+.last{
+  grid-area: lasttips;
+  display: flex;
+  background-color: crimson;
+}
+
+.contact{
+  grid-area: contact;
+  display: flex;
+}
+
+footer{
+  grid-area: footer;
+  display: flex;
+  background-color: darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+    display: flex;
     align-items: center;
 }
 
@@ -60,7 +164,7 @@ img {
     font-size: 1.125rem;
   }
   
- h1, p, label {
+ h6, p, label {
     margin-top: 0;
     margin-bottom: 0.5rem;
     color:white;
