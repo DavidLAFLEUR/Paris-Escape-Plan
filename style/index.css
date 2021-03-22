@@ -10,10 +10,35 @@ body{
 
 }
 
+.NosBonsPLans{
+  display: flex;
+}
+
+.last{
+ 
+}
+
+.lasttitles{
+  display: flex;
+  justify-content: center;
+}
+
+.lasttips{
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+h3.lasttips{
+  text-align: center;
+}
+
 .logo{
   width: 40px;
   height: 40px;
 }
+
+/*
 .contact {
     display: flex;
     align-items: center;
@@ -120,7 +145,7 @@ img {
     text-align: center;
   }
   
-  /* form */
+  /* form 
   
   form {
     background: var(--color-darkblue-alpha);
@@ -178,3 +203,4 @@ img {
   #submit:hover {
       background-color:#85B3B7;
   }
+*/
