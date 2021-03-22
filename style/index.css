@@ -12,6 +12,22 @@ body{
 
 .NosBonsPLans{
   display: flex;
+  box-sizing: border-box;
+  border: 2px black solid;
+  
+}
+.bonsplans2{
+  display: flex;
+  justify-content: center;
+  gap: 60px 60px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+.bonplans3{
+  display: flex;
+  justify-content: center;
+  gap: 60px 60px;
+  margin-bottom: 25px;
 }
 
 .last{
@@ -27,6 +43,7 @@ body{
   display: flex;
   gap: 80px;
   justify-content: center;
+  gap : 85px;
 }
 
 h3.lasttips{
