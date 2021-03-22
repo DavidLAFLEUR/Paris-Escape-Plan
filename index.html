@@ -30,28 +30,26 @@
     </header>
 
     <section class="bienvenue">
-        <div class="image1">
             
-            <h1>Plan P(aris pleasure)</h1>
-
-        </div>    
+            <img class="imagedeParis" src="images/paris-at-sunset 1.png" alt="image de Paris"/>
+ 
     </section>
 
     <section class="NosBonsPlans">
+
         <div class="bp">
             <img src="/images/logo-location.png" alt = "logo" class="logo"/>
         </div>    
 
         <div class="bp">
-            <h2>Explorez nos bons plans</h2>
+            <h2 class="h2bp">Explorez nos bons plans</h2>
         </div>    
 
         <div class="bp">
-            <h4>rendez-vous sur la carte...</h4>
-        </div>    
-
-        <div class="bp">
-
+            <h4 class="h4bp">rendez-vous sur la carte...</h4>
+        </div>  
+        
+        <div class="boxbonplans">
             <div class="bonsplans2">
 
             <div class="bonplan">
@@ -96,7 +94,7 @@
 
         <div class="lasttitles">
 
-        <img src="/images/logo-location.png" alt="logo" class="logo"/>
+        <img src="/images/logo-location.png" alt="logo" class="logo2"/>
 
         <h2>Les derniers sélectionnés<br> Nous vous les recommandons</h2>
 
@@ -104,9 +102,9 @@
 
         <div class="lasttips">
 
-            <div class = "">
+            <div class = "boxlasttips">
                 <a href = "page1.html">
-                    <img src="/images/Rectangle 13.png" alt = "PhotoFood" class="image">
+                    <img src="/images/Rectangle 13.png" alt = "PhotoFood" class="image1">
                 </a>
 
                 <h3>
@@ -114,13 +112,13 @@
                 </h3>
 
                 <p>
-                    Description du bon plan food    
+                    Description du bon plan food<br>Le bon plan food du jour<br>C'est pas ici  
                 </p>    
             </div>
 
-            <div class = "">
+            <div class = "boxlasttips">
                 <a href = "page1.html">
-                    <img src="/images/Rectangle 13 (1).png" alt = "PhotoDetente" class="image">
+                    <img src="/images/Rectangle 13 (1).png" alt = "PhotoDetente" class="image1">
                 </a>
 
                 <h3>
@@ -128,13 +126,13 @@
                 </h3>
 
                 <p>
-                    Description du bon plan détente
+                    Description du bon plan détente<br>Le Bon plan détente de la semaine<br>C'est par là
                 </p>
             </div>
 
-            <div class = "">
+            <div class = "boxlasttips">
                 <a href = "page1.html">
-                    <img src ="/images/Rectangle 13 (2).png" alt = "PhotoVoyage" class="image">
+                    <img src ="/images/Rectangle 13 (2).png" alt = "PhotoVoyage" class="image1">
                 </a>
 
                 <h3>
@@ -142,12 +140,12 @@
                 </h3>
 
                 <p>
-                   Descripton du bon plan voyage
+                   Descripton du bon plan voyage<br>Lebon plan voyage de la semaine<br>C'est par ici
                 </p>
             </div>
         </div>
     </section>
-<!--
+
     <section id="contact">
         <div id="left-form">
             <h6>Contactez-nous</h6>
@@ -162,26 +160,26 @@
                 <li><i class="fas fa-check-circle"></i>   Rester en contact avec nous</li>
             </ul>
     
-            <img src="Image-form/Image-formulaire.svg">
+            <img class="imageform" src="Image-form/Image-formulaire.svg">
         </div>
 
         <div class="form-container">
     
             <form onsubmit="sendMail(event)" id="contact-form">
                 <div class="form-group">
-                    <label id="name-label" for="name">Nom</label>
+                    <!-- <label id="name-label" for="name">Nom</label> -->
 
                     <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
                 </div>
     
                 <div class="form-group">
-                    <label id="email-label" for="email">Email</label>
+                    <!-- <label id="email-label" for="email">Email</label> -->
 
                     <input type="email" name="email" id="email" class="form-control" placeholder="Votre email" required>
                 </div>
     
                 <div class="form-group">
-                    <p>Choisissez votre catégorie</p>
+                    <!-- <p>Choisissez votre catégorie</p> -->
 
                     <select id="dropdown" name="role" class="form-control" required>
                         <option disabled selected value>Selectionner une catégorie</option>
@@ -194,13 +192,13 @@
     
                     <div class="form-group">
 
-                    <label id="object-label" for="object">Objet</label>
+                    <!-- <label id="object-label" for="object">Objet</label> -->
 
                     <input type="text" name="object" id="object" class="form-control" placeholder="Objet du message" required>
                     </div>
     
                 <div class="form-group">
-                    <p>Écrivez votre message</p>
+                    <!-- <p>Écrivez votre message</p> -->
 
                     <textarea id="comments" class="input-textarea" placeholder="Votre message" required ></textarea>
                 </div>
@@ -213,7 +211,7 @@
             </form >
 
             <p id="msgSend"></p>
-        </div> -->
+        </div>
     </section>
 
 
