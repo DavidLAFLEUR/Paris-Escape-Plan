@@ -21,7 +21,6 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <h1>Place du header</h1>
     
         </nav>
 
@@ -31,101 +30,118 @@
     </header>
 
     <section class="bienvenue">
-        <h1>Plan P(aris pleasure)</h1>
-
-        <div class = "photoDeParis">
-          
-        </div>    
+            
+            <img class="imagedeParis" src="images/paris-at-sunset 1.png" alt="image de Paris"/>
+ 
     </section>
 
-    <section class="bonPlans">
+    <section class="NosBonsPlans">
+
         <div class="bp">
-            <img src = "" alt = "logo" class="logo2"/>
+            <img src="/images/logo-location.png" alt = "logo" class="logo"/>
         </div>    
 
         <div class="bp">
-            <h2>Explorez nos bons plans</h2>
+            <h2 class="h2bp">Explorez nos bons plans</h2>
         </div>    
 
         <div class="bp">
-            <h4>rendez-vous sur la carte...</h4>
-        </div>    
+            <h4 class="h4bp">rendez-vous sur la carte...</h4>
+        </div>  
+        
+        <div class="boxbonplans">
+            <div class="bonsplans2">
 
-        <div class="bp" id="bp4">
             <div class="bonplan">
                 <a href="page1.html">
-                    <img src = "/images/Group 13.png" alt = "BonPlansFood" class = ""/>
+                    <img src = "/images/Group 13.png" alt="BonPlansFood" class="image"/>
                 </a>
             </div>
 
             <div class="bonplan">
                 <a href="page1.html">
-                    <img src = "/images/Group 13 (1).png" alt = "BonPlansNature" class = ""/>
+                    <img src = "/images/Group 13 (1).png" alt = "BonPlansNature" class="image"/>
                 </a>
             </div>   
 
             <div class="bonplan">
                 <a href="page1.html">
-                    <img src = "/images/Group 13 (2).png" alt = "BonPlansDetente" class = ""/>
+                    <img src = "/images/Group 13 (2).png" alt = "BonPlansDetente" class="image"/>
                 </a>
-            </div>    
+            </div> 
+
+            </div>
+            
+            <div class="bonplans3">
 
             <div class = "bonplan">
                 <a href="page1.html">
-                    <img src = "/images/Group 15.png" alt = "BonPlansVoyage" class = ""/>
+                    <img src = "/images/Group 15.png" alt = "BonPlansVoyage" class="image"/>
                 </a>
             </div>     
 
             <div class="bonplan">
                 <a href = "page1.html">
-                    <img src = "" alt = "BonPlansCulture" class = ""/>
+                    <img src="/images/Group 17.png" alt = "BonPlansCulture" class="image"/>
                 </a>
-            </div>                        
+            </div>     
+            
+            </div>
         </div>
     </section>
 
     <section class="last">
-        <img src = "" alt = "logo" class = "logo3"/>
 
-        <h2>Les derniers sélectionnés</h2>
+        <div class="lasttitles">
 
-        <h4>Nous vous les recommandons...</h4>
+        <img src="/images/logo-location.png" alt="logo" class="logo2"/>
 
-        <div class="lastBonPlans">
-            <div class = "">
-                <h3></h3>
+        <h2>Les derniers sélectionnés<br> Nous vous les recommandons</h2>
+
+        </div>
+
+        <div class="lasttips">
+
+            <div class = "boxlasttips">
+                <a href = "page1.html">
+                    <img src="/images/Rectangle 13.png" alt = "PhotoFood" class="image1">
+                </a>
+
+                <h3>
+                    Titre 1
+                </h3>
 
                 <p>
-                    
-                </p>
-            
-                <a href = "page1.html">
-                    <img src = "" alt = "PhotoFood" class = "imgFood">
-                </a>
+                    Description du bon plan food<br>Le bon plan food du jour<br>C'est pas ici  
+                </p>    
             </div>
 
-            <div class = "">
-                <h3></h3>
+            <div class = "boxlasttips">
+                <a href = "page1.html">
+                    <img src="/images/Rectangle 13 (1).png" alt = "PhotoDetente" class="image1">
+                </a>
+
+                <h3>
+                    Titre 2
+                </h3>
 
                 <p>
-
+                    Description du bon plan détente<br>Le Bon plan détente de la semaine<br>C'est par là
                 </p>
-            
-                <a href = "page1.html">
-                    <img src = "" alt = "PhotoDetente" class = "imgDetente">
-                </a>
             </div>
 
-            <div class = "">
-                <h3></h3>
+            <div class = "boxlasttips">
+                <a href = "page1.html">
+                    <img src ="/images/Rectangle 13 (2).png" alt = "PhotoVoyage" class="image1">
+                </a>
+
+                <h3>
+                    Titre 3
+                </h3>
 
                 <p>
-
+                   Descripton du bon plan voyage<br>Lebon plan voyage de la semaine<br>C'est par ici
                 </p>
-
-                <a href = "page1.html">
-                    <img src = "" alt = "PhotoVoyage" class = "imgVoyage">
-                </a>
             </div>
         </div>
     </section>
@@ -144,26 +160,26 @@
                 <li><i class="fas fa-check-circle"></i>   Rester en contact avec nous</li>
             </ul>
     
-            <img src="Image-form/Image-formulaire.svg">
+            <img class="imageform" src="Image-form/Image-formulaire.svg">
         </div>
 
         <div class="form-container">
     
             <form onsubmit="sendMail(event)" id="contact-form">
                 <div class="form-group">
-                    <label id="name-label" for="name">Nom</label>
+                    <!-- <label id="name-label" for="name">Nom</label> -->
 
                     <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
                 </div>
     
                 <div class="form-group">
-                    <label id="email-label" for="email">Email</label>
+                    <!-- <label id="email-label" for="email">Email</label> -->
 
                     <input type="email" name="email" id="email" class="form-control" placeholder="Votre email" required>
                 </div>
     
                 <div class="form-group">
-                    <p>Choisissez votre catégorie</p>
+                    <!-- <p>Choisissez votre catégorie</p> -->
 
                     <select id="dropdown" name="role" class="form-control" required>
                         <option disabled selected value>Selectionner une catégorie</option>
@@ -176,13 +192,13 @@
     
                     <div class="form-group">
 
-                    <label id="object-label" for="object">Objet</label>
+                    <!-- <label id="object-label" for="object">Objet</label> -->
 
                     <input type="text" name="object" id="object" class="form-control" placeholder="Objet du message" required>
                     </div>
     
                 <div class="form-group">
-                    <p>Écrivez votre message</p>
+                    <!-- <p>Écrivez votre message</p> -->
 
                     <textarea id="comments" class="input-textarea" placeholder="Votre message" required ></textarea>
                 </div>
