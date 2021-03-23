@@ -37,16 +37,11 @@
 
     <section class="NosBonsPlans">
 
-        <div class="bp">
-            <img src="/images/logo-location.png" alt = "logo" class="logo"/>
-        </div>    
+        <div class="bonplanstitle">
+            <img src="/images/logo-location.png" alt = "logo" class="logo1"/>
+        
+            <h2 class="h2bp">Explorez nos bons plan<br>rendez-vous sur la carte...</h2>  
 
-        <div class="bp">
-            <h2 class="h2bp">Explorez nos bons plans</h2>
-        </div>    
-
-        <div class="bp">
-            <h4 class="h4bp">rendez-vous sur la carte...</h4>
         </div>  
         
         <div class="boxbonplans">
@@ -146,82 +141,127 @@
         </div>
     </section>
 
-    <section id="contact">
-        <div id="left-form">
-            <h6>Contactez-nous</h6>
+    <form class="my-form">
+        <div class="container">
+          <h1>Get in touch!</h1>
+          <ul>
+            <li>
+              <select>
+                <option selected disabled>-- Please choose an option --</option>
+                <option>Request Quote</option>
+                <option>Send Resume</option>
+                <option>Other</option>      
+              </select>
+            </li>
+            <li>
+              <div class="grid grid-2">
+                <input type="text" placeholder="Name" required>  
+                <input type="text" placeholder="Surname" required>
+              </div>
+            </li>
+            <li>
+              <div class="grid grid-2">
+                <input type="email" placeholder="Email" required>  
+                <input type="tel" placeholder="Phone">
+              </div>
+            </li>    
+            <li>
+              <textarea placeholder="Message"></textarea>
+            </li>   
+            <li>
+              <input type="checkbox" id="terms">
+              <label for="terms">I have read and agreed with <a href="">the terms and conditions.</a></label>
+            </li>  
+            <li>
+              <div class="grid grid-3">
+                <div class="required-msg">REQUIRED FIELDS</div>
+                <button class="btn-grid" type="submit" disabled>
+                  <span class="back">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+                  </span>
+                  <span class="front">SUBMIT</span>
+                </button>
+                <button class="btn-grid" type="reset" disabled>
+                  <span class="back">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+                  </span>
+                  <span class="front">RESET</span>
+                </button> 
+              </div>
+            </li>    
+          </ul>
+        </div>
+      </form>
+      <footer>
+        <div class="container">
+          <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George Martsoukos</a>
+          </small>
+        </div>
+      </footer>
 
-            <p>Pour toute information supplémentaire, n'hésitez pas à :</p>
 
-            <ul>
-                <li><i class="fas fa-check-circle"></i>   Nous écrire un petit message</li>
 
-                <li><i class="fas fa-check-circle"></i>   Nous faire une suggestion</li>
+    <footer class="site-footer">
 
-                <li><i class="fas fa-check-circle"></i>   Rester en contact avec nous</li>
-            </ul>
-    
-            <img class="imageform" src="Image-form/Image-formulaire.svg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
         </div>
 
-        <div class="form-container">
-    
-            <form onsubmit="sendMail(event)" id="contact-form">
-                <div class="form-group">
-                    <!-- <label id="name-label" for="name">Nom</label> -->
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
 
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
-                </div>
-    
-                <div class="form-group">
-                    <!-- <label id="email-label" for="email">Email</label> -->
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
 
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Votre email" required>
-                </div>
-    
-                <div class="form-group">
-                    <!-- <p>Choisissez votre catégorie</p> -->
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
 
-                    <select id="dropdown" name="role" class="form-control" required>
-                        <option disabled selected value>Selectionner une catégorie</option>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
 
-                        <option value="particulier">Particulier</option>
-
-                        <option value="entreprise">Entreprise</option>
-                    </select>
-                </div>
-    
-                    <div class="form-group">
-
-                    <!-- <label id="object-label" for="object">Objet</label> -->
-
-                    <input type="text" name="object" id="object" class="form-control" placeholder="Objet du message" required>
-                    </div>
-    
-                <div class="form-group">
-                    <!-- <p>Écrivez votre message</p> -->
-
-                    <textarea id="comments" class="input-textarea" placeholder="Votre message" required ></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <button type="submit" id="submit" class="submit-button">Envoyer</button>
-                </div>
-            </div>
-
-            </form >
-
-            <p id="msgSend"></p>
-        </div>
-    </section>
-
-
-    <footer class="footer">
-
-        <div>
-            <h1>Place du footer</h1>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
         </div>
 
-    </footer>
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
  
 <script type="text/javascript" src="../js/index.js"></script>
 
