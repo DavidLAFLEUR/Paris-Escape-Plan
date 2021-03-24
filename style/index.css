@@ -1,41 +1,50 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@600;700&display=swap');
+
+body, html{
+  width: 100%;
+  height: 100vh;
   background-color: #E5E5E5;
+  margin: 0;
+  font-family: Lato, sans-serif;
 }
 
-body{
- 
-}
+h1{
+  position: absolute;
+  left: 70%;
+  color: #51586D;
+  z-index: 999;
+  font-size: 48px;
+  font-family: Oswald, sans-serif;
 
+}
 .imagedeParis{
   width: 100%;
   height: 700px;
   position: relative;
 }
 
-.bienvenue{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
 .bonplanstitle{
   display: flex;
-  justify-content: center;
+  justify-content: center; 
 }
+
 .NosBonsPLans{
   display: flex;
 
 }
 
-/*.boxbonplans{
-  box-sizing: border-box;
-  border: 2px black solid;
-  margin-bottom: 36px;
-  width: 1057px;
-  height: 548;
-  margin: 0 auto;
+.bon-plans-h2{
+  margin-top: 60px;
+  margin-bottom: 60px;
 
-}*/
+}
+
+.logo1{
+  width: 83px;
+  height: 83px;
+  margin-top: 45px;
+}
 
 .image{
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -64,13 +73,9 @@ body{
 .lasttitles{
   display: flex;
   justify-content: center;
-  margin-bottom: 53px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
-
-/*.boxlasttips{
-  box-sizing: border-box;
-  border: 2px black solid;
-}*/
 
 .image1{
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -83,7 +88,7 @@ body{
   gap : 60px;
 }
 
-.logo2,.logo1{
+.logo2{
   width: 83px;
   height: 83px;
   margin-top: 10px;
@@ -97,452 +102,161 @@ h3{
   text-align: center;
 }
 
-  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+/* Formulaire de contact */
 
-  /* RESET RULES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  :root {
-    --white: #afafaf;
-    --red: #e31b23;
-    --bodyColor: #292a2b;
-    --borderFormEls: hsl(0, 0%, 10%);
-    --bgFormEls: hsl(0, 0%, 14%);
-    --bgFormElsFocus: hsl(0, 7%, 20%);
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: none;
-  }
-  
-  a {
-    color: inherit;
-  }
-  
-  input,
-  select,
-  textarea,
-  button {
-    font-family: inherit;
-    font-size: 100%;
-  }
-  
-  button,
-  label {
-    cursor: pointer;
-  }
-  
-  select {
-    appearance: none;
-  }
-  
-  /* Remove native arrow on IE */
-  select::-ms-expand {
-    display: none;
-  }
-  
-  /*Remove dotted outline from selected option on Firefox*/
-  /*https://stackoverflow.com/questions/3773430/remove-outline-from-select-box-in-ff/18853002#18853002*/
-  /*We use !important to override the color set for the select on line 99*/
-  select:-moz-focusring {
-    color: transparent !important;
-    text-shadow: 0 0 0 var(--white);
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  body {
-    font: 18px/1.5 "Open Sans", sans-serif;
-    background: var(--bodyColor);
-    color: var(--white);
-    margin: 1.5rem 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-  
-  /* FORM ELEMENTS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .my-form h1 {
-    margin-bottom: 1.5rem;
-  }
-  
-  .my-form li,
-  .my-form .grid > *:not(:last-child) {
-    margin-bottom: 1.5rem;
-  }
-  
-  .my-form select,
-  .my-form input,
-  .my-form textarea,
-  .my-form button {
-    width: 100%;
-    line-height: 1.5;
-    padding: 15px 10px;
-    border: 1px solid var(--borderFormEls);
-    color: var(--white);
-    background: var(--bgFormEls);
-    transition: background-color 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25),
-      transform 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
-  }
-  
-  .my-form textarea {
-    height: 170px;
-  }
-  
-  .my-form ::placeholder {
-    color: inherit;
-    /*Fix opacity issue on Firefox*/
-    opacity: 1;
-  }
-  
-  .my-form select:focus,
-  .my-form input:focus,
-  .my-form textarea:focus,
-  .my-form button:enabled:hover,
-  .my-form button:focus,
-  .my-form input[type="checkbox"]:focus + label {
-    background: var(--bgFormElsFocus);
-  }
-  
-  .my-form select:focus,
-  .my-form input:focus,
-  .my-form textarea:focus {
-    transform: scale(1.02);
-  }
-  
-  .my-form *:required,
-  .my-form select {
-    background-repeat: no-repeat;
-    background-position: center right 12px;
-    background-size: 15px 15px;
-  }
-  
-  .my-form *:required {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg);
-  }
-  
-  .my-form select {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/down.svg);
-  }
-  
-  .my-form *:disabled {
-    cursor: default;
-    filter: blur(2px);
-  }
-  
-  /* FORM BTNS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .my-form .required-msg {
-    display: none;
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg)
-      no-repeat center left / 15px 15px;
-    padding-left: 20px;
-  }
-  
-  .my-form .btn-grid {
-    position: relative;
-    overflow: hidden;
-    transition: filter 0.2s;
-  }
-  
-  .my-form button {
-    font-weight: bold;
-  }
-  
-  .my-form button > * {
-    display: inline-block;
-    width: 100%;
-    transition: transform 0.4s ease-in-out;
-  }
-  
-  .my-form button .back {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-110%, -50%);
-  }
-  
-  .my-form button:enabled:hover .back,
-  .my-form button:focus .back {
-    transform: translate(-50%, -50%);
-  }
-  
-  .my-form button:enabled:hover .front,
-  .my-form button:focus .front {
-    transform: translateX(110%);
-  }
-  
-  /* CUSTOM CHECKBOX
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .my-form input[type="checkbox"] {
-    position: absolute;
-    left: -9999px;
-  }
-  
-  .my-form input[type="checkbox"] + label {
-    position: relative;
-    display: inline-block;
-    padding-left: 2rem;
-    transition: background 0.3s cubic-bezier(0.57, 0.21, 0.69, 1.25);
-  }
-  
-  .my-form input[type="checkbox"] + label::before,
-  .my-form input[type="checkbox"] + label::after {
-    content: "";
-    position: absolute;
-  }
-  
-  .my-form input[type="checkbox"] + label::before {
-    left: 0;
-    top: 6px;
-    width: 18px;
-    height: 18px;
-    border: 2px solid var(--white);
-  }
-  
-  .my-form input[type="checkbox"]:checked + label::before {
-    background: var(--red);
-  }
-  
-  .my-form input[type="checkbox"]:checked + label::after {
-    left: 7px;
-    top: 7px;
-    width: 6px;
-    height: 14px;
-    border-bottom: 2px solid var(--white);
-    border-right: 2px solid var(--white);
-    transform: rotate(45deg);
-  }
-  
-  /* FOOTER
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  footer {
-    font-size: 1rem;
-    text-align: right;
-    backface-visibility: hidden;
-  }
-  
-  footer a {
-    text-decoration: none;
-  }
-  
-  footer span {
-    color: var(--red);
-  }
-  
-  /* MQ
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  @media screen and (min-width: 600px) {
-    .my-form .grid {
-      display: grid;
-      grid-gap: 1.5rem;
-    }
-  
-    .my-form .grid-2 {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .my-form .grid-3 {
-      grid-template-columns: auto auto auto;
-      align-items: center;
-    }
-  
-    .my-form .grid > *:not(:last-child) {
-      margin-bottom: 0;
-    }
-  
-    .my-form .required-msg {
-      display: block;
-    }
-  }
-  
-  @media screen and (min-width: 541px) {
-    .my-form input[type="checkbox"] + label::before {
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  
-    .my-form input[type="checkbox"]:checked + label::after {
-      top: 3px;
-    }
-  }
-  
-  
-  
-  .site-footer{
-    display: flex;
-    background-color:#E9E4E0;
-    padding:45px 0 20px;
-    font-size:15px;
-    line-height:24px;
-    color:#737373;
-    border: 1px black solid; 
-  }
+.my-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
 
-  .site-footer hr{
-    border-top-color:#bbb;
-    opacity:0.5
-  }
+.my-form-container{
+  display: flex;
+  width: 1060px;
+  height: 280px;
+  border: 1px black solid;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.my-form-image{
+  width: 50%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "High1 High1"
+  "Low1 Low2";
+}
 
-  .site-footer hr.small{
-    margin:20px 0
-  }
+.my-form p{
+  grid-area: High1;
+}
 
-  .site-footer h6{
-    color:#fff;
-    font-size:16px;
-    text-transform:uppercase;
-    margin-top:5px;
-    letter-spacing:2px
-  }
+.Contact-Us{
+  margin:auto;
+  grid-area: Low2;
+}
 
-  .site-footer a{
-    color:#737373;
-  }
+.my-form-ul{
+  height: 180px;
+  width: 450px;
+}
 
-  .site-footer a:hover{
-    color:#3366cc;
-    text-decoration:none;
-  }
+li{
+  list-style: none;
 
-  .footer-links{
-    padding-left:0;
-    list-style:none
-  }
+}
 
-  .footer-links li{
-    display:block
-  }
+input, textarea{
+  width: 450px;
+}
 
-  .footer-links a{
-    color:#737373
-  }
+.my-form-ipt{
 
-  .footer-links a:active,.footer-links a:focus,.footer-links a:hover{
-    color:#3366cc;
-    text-decoration:none;
-  }
+}
 
-  .footer-links.inline li{
-    display:inline-block
-  }
+input{
+display: flex;
+border-radius: 4px;
+}
 
-  .site-footer .social-icons{
-    text-align:right
-  }
+textarea{
+  border-radius: 4px;
+  resize: none;
+}
 
-  .site-footer .social-icons a{
-    width:40px;
-    height:40px;
-    line-height:40px;
-    margin-left:6px;
-    margin-right:0;
-    border-radius:100%;
-    background-color:#33353d
-  }
+.my-form-button{
 
-  .copyright-text{
-    margin:0
-  }
+}
 
-  @media (max-width:991px){
-    .site-footer
-    {
-      margin-bottom:30px
-    }
-  }
+/* FOOTER */
 
-  @media (max-width:767px){
-    .site-footer
-    {
-      padding-bottom:0
-    }
-    .site-footer .copyright-text,.site-footer .social-icons
-    {
-      text-align:center
-    }
-  }
+.my-footer{
+}
 
-  .social-icons{
-    padding-left:0;
-    margin-bottom:0;
-    list-style:none
-  }
+.my-footer-container{
+  width: 100%;
+  height: 140px;
+  border: 1px black solid;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25% ;
+  grid-template-rows: 50% 50% ;
+  grid-template-areas: 
+  "AP AP CAT LU"
+  "CP CP RS RS";
+  padding-top: 20px;
+}
 
-  .social-icons li{
-    display:inline-block;
-    margin-bottom:4px
-  }
+.footer-apropos{
+  grid-area: AP;
+  display: flex;
+  justify-content: flex-start;
 
-  .social-icons li.title{
-    margin-right:15px;
-    text-transform:uppercase;
-    color:#96a2b2;
-    font-weight:700;
-    font-size:13px
-  }
+}
 
-  .social-icons a{
-    background-color:#eceeef;
-    color:#818a91;
-    font-size:16px;
-    display:inline-block;
-    line-height:44px;
-    width:44px;
-    height:44px;
-    text-align:center;
-    margin-right:8px;
-    border-radius:100%;
-    -webkit-transition:all .2s linear;
-    -o-transition:all .2s linear;
-    transition:all .2s linear
-  }
+.p-footer{
+  text-align: justify;
+  margin: 0;
+}
 
-  .social-icons a:active,.social-icons a:focus,.social-icons a:hover{
-    color:#fff;
-    background-color:#29aafe
-  }
+.footer-categories{
+  grid-area: CAT;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .social-icons.size-sm a{
-    line-height:34px;
-    height:34px;
-    width:34px;
-    font-size:14px
-  }
+.footer-cat{
+  list-style: none;
+}
 
-  .social-icons a.facebook:hover{
-    background-color:#3b5998
-  }
 
-  .social-icons a.twitter:hover{
-    background-color:#00aced
-  }
+.footer-liens{
+  grid-area: LU;
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+}
 
-  .social-icons a.linkedin:hover{
-    background-color:#007bb6
-  }
+.footer-copyright{
+  grid-area: CP;
+  display: flex;
+  align-items: flex-end;
+}
 
-  .social-icons a.dribbble:hover{
-    background-color:#ea4c89
-  }
+.footer-social{
+  grid-area: RS;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 80px;
+}
 
-  @media (max-width:767px){
-    .social-icons li.title
-    {
-      display:block;
-      margin-right:0;
-      font-weight:600
-    }
-  }
+h8{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.footer-ul{
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/* Test Ancre pour remonter en haut de page */
+
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+#scroll_to_top img {
+  width: 25px;
+}
+	
