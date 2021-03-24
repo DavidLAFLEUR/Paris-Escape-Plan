@@ -1,1 +1,453 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Lato, sans-serif;
+    color : #51686D;
+    background-color: #D5D7D8;
+}
+
+a {
+    color: #51686D;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+  }
+  /* HEADER */
+  
+  .header {
+    top: 0;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    font-family: Lato, sans-serif;
+    width: 100vw;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header  {
+    display: block;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background:#51686D;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 20px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #51686D;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+
+  /* 1ere SECTION */
+
+.crew {
+    text-align: center;
+    min-width: 100%;
+    margin-top: 60px;
+}
+
+.first {
+    max-width: 100%;
+}
+
+h1 {
+    font-family : Oswald, sans-serif;
+    font-size: clamp(25px, 5vw, 48px);
+    position: absolute;
+    left: 70%; 
+        
+}
+
+/* Texte défilant  */
+.marquee-rtl {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+   }
+
+.marquee-rtl > :first-child {
+    background-color: #E9E4E0;
+    display: inline-block; /* modèle de boîte en ligne */
+    padding-right: 2em; /* un peu d'espace pour la transition*/
+
+    white-space: nowrap;  /*pas de passage à la ligne */
+    animation: defilement-rtl 10s infinite linear;}
+
+    @keyframes defilement-rtl {     
+        0% { transform: translate3d(100%,0,4); }  /*position initiale à droite */      
+        100% { transform: translate3d(-100%,0,0);  /*position finale à gauche */  }
+     }
+
+ .hashtagDefile:after {
+    content:attr(data-text);
+    background-color: #E9E4E0;
+    position:absolute;
+    white-space:nowrap;
+    padding-left:10px;
+}
+
+
+/* div photo de nous+description */
+
+.nous {
+    margin: auto;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 60px;
+}
+
+.team {
+    /* border: 1px solid black; */
+    display : grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;    
+    font-size:25px;
+    margin : 50px 0px 0px 0px;
+   
+}
+
+.speach {
+    padding-top: 50px
+}
+
+.logoPage3 {
+     transform : translate(700px, -200px); 
+}
+
+/* section streetfigther */
+
+.Perso{
+    width: 400px;
+    
+}
+
+.topoDavid, .topoMehdi, .topoAnneLaure, .topoBenoit, .topoPaulE{
+   /* margin-left: 35%; */
+}
+
+.topoDavid p, .topoMehdi p, .topoAnneLaure p, .topoBenoit p, .topoPaulE p{
+    font-style: italic;
+    text-align : justify;
+    font-size: 18px;
+    padding-bottom: 10px;
+    /* border: 1px solid black; */
+    
+}
+
+.prénom {
+    font-size: 20px;
+    text-align: end !important;
+    transform: translate(0px, -30px);
+    color:black;
+    
+}
+
+.reseau {
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.streetfighter {
+    margin-top: 50px;
+   
+}
+
+.avatars3 {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    gap: 40px;
+
+
+}
+
+.avatars2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    gap: 40px;
+}
+
+
+.David {
+    border-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    height: 332px;
+    width:332px;
+    background: url("Group44.png");
+    transition: all 1s ease-in-out;
+}
+.David:hover {
+    transition: all 1s ease-in-out;
+    background: url("ken2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Mehdi {
+    border-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    height: 332px;
+    width:332px;
+    background: url("Group42.png");
+    transition: all 1s ease-in-out; 
+}
+
+.Mehdi:hover {
+    background: url("ryu2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+.AnneLaure {
+    border-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    height: 332px;
+    width:332px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("Group43.png");
+    /* transition: all 1s ease-in-out; */
+}
+.AnneLaure:hover {
+    background: url("chunLi2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+.Benoit {
+    border-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    height: 332px;
+    width:332px;
+    background: url("Group41.png");
+    transition: all 1s ease-in-out;
+}
+.Benoit:hover {
+    background: url("sagat2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+.PaulE {
+    border-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    height: 332px;
+    width:332px;
+    background: url("Group45.png");
+    transition: all 1s ease-in-out;
+}
+.PaulE:hover {
+    background: url("bison2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+
+
+
+@media (max-width: 900px) {
+
+ h1 {
+    position: absolute;
+    left: 60%; 
+    top: 15%;
+ }   
+  
+.team { 
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;   
+    font-size: 18px;
+    /* margin : 50px 10px 0px 15px; */
+
+}
+
+.nous {
+    width:90%;
+
+}
+
+  .logoPage3 {
+  display:none;
+}
+
+.topoDavid, .topoMehdi, .topoAnneLaure, .topoBenoit, .topoPaulE{
+    margin-left: 0;
+    padding: 10px;
+ }
+
+ .streetfighter {
+    margin-top: 80px;
+   
+}
+
+.speach {
+    padding: 50px 20px 0px;
+}
+
+.prénom {
+    font-size: 20px;
+    text-align: end !important;
+    transform: translate(0px, -30px);
+    color:black;
+    padding: 10px;
+}
+}
+
+@media (max-width: 768px) {
+    .header {
+        top: 0;
+        box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+        font-family: Lato, sans-serif;
+        width: 100%;
+        z-index: 3;
+      }
+
+    .speach p{
+        margin: 100px ;
+        text-align: center;
+    }
+
+    .nous {
+        margin: auto;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+        border-radius: 105px;
+        width: 50%
+    }
+
+    .logoPage3 {
+        display:none;
+    }
+
+    .first {
+        width:50%;
+    }
+
+    
+}
+
+
+
+@media (min-width: 768px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+  .active {
+    background-color: #e9e4e0;
+  }
+  
+  div {
+    width: 100%;
+    /* height: 50px; */
+  }
+  
