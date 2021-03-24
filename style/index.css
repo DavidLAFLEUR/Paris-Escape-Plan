@@ -1,9 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@600;700&display=swap');
 
 body, html{
   width: 100%;
   height: 100vh;
   background-color: #E5E5E5;
   margin: 0;
+  font-family: Lato, sans-serif;
+}
+
+h1{
+  position: absolute;
+  left: 70%;
+  color: #51586D;
+  z-index: 999;
+  font-size: 48px;
+  font-family: Oswald, sans-serif;
+
 }
 .imagedeParis{
   width: 100%;
@@ -11,19 +24,26 @@ body, html{
   position: relative;
 }
 
-.bienvenue{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
 .bonplanstitle{
   display: flex;
   justify-content: center; 
 }
+
 .NosBonsPLans{
   display: flex;
 
+}
+
+.bon-plans-h2{
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+}
+
+.logo1{
+  width: 83px;
+  height: 83px;
+  margin-top: 45px;
 }
 
 .image{
@@ -53,7 +73,8 @@ body, html{
 .lasttitles{
   display: flex;
   justify-content: center;
-  margin-bottom: 53px;
+  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .image1{
@@ -67,7 +88,7 @@ body, html{
   gap : 60px;
 }
 
-.logo2,.logo1{
+.logo2{
   width: 83px;
   height: 83px;
   margin-top: 10px;
@@ -86,19 +107,36 @@ h3{
 .my-form{
   display: flex;
   justify-content: center;
-
+  margin-top: 60px;
 }
 
 .my-form-container{
+  display: flex;
   width: 1060px;
   height: 280px;
   border: 1px black solid;
   margin-top: 40px;
   margin-bottom: 100px;
+  padding: 10px;
+  border-radius: 8px;
+}
+.my-form-image{
+  width: 50%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "High1 High1"
+  "Low1 Low2";
 }
 
-h7{
+.my-form p{
+  grid-area: High1;
+}
 
+.Contact-Us{
+  margin:auto;
+  grid-area: Low2;
 }
 
 .my-form-ul{
@@ -121,6 +159,12 @@ input, textarea{
 
 input{
 display: flex;
+border-radius: 4px;
+}
+
+textarea{
+  border-radius: 4px;
+  resize: none;
 }
 
 .my-form-button{
@@ -142,6 +186,7 @@ display: flex;
   grid-template-areas: 
   "AP AP CAT LU"
   "CP CP RS RS";
+  padding-top: 20px;
 }
 
 .footer-apropos{
@@ -178,6 +223,7 @@ display: flex;
 .footer-copyright{
   grid-area: CP;
   display: flex;
+  align-items: flex-end;
 }
 
 .footer-social{
@@ -185,11 +231,13 @@ display: flex;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 80px;
 }
 
 h8{
   display: flex;
   justify-content: center;
+  text-transform: uppercase;
 }
 
 .footer-ul{
@@ -201,7 +249,7 @@ h8{
 
 /* Test Ancre pour remonter en haut de page */
 
-/* #scroll_to_top {
+#scroll_to_top {
   position: fixed;
   width: 25px;
   height: 25px;
@@ -210,5 +258,5 @@ h8{
 }
 #scroll_to_top img {
   width: 25px;
-} */
+}
 	
