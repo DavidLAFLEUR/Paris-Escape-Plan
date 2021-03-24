@@ -1,1 +1,620 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+#map-canvas {
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.conteneurMap {
+  margin: 5% 10% 10% 10%;
+  text-align: center;
+}
+.imgCarte {
+  width: 100px;
+  height: 100px;
+}
+
+/* main {
+  /* margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 4fr));
+  grid-gap: 20px;
+  align-items: center; 
+}
+
+main > article {
+  /* border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); 
+  padding: 5px;
+} 
+*/
+
+.text {
+  padding: 0 20px 20px;
+}
+.text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+.prettyprint {
+  display: none;
+}
+
+#caption {
+  padding-left: 50px;
+  position: relative;
+  margin: auto;
+}
+#building {
+  display: flex;
+  width: 250px;
+  margin: 50px auto auto auto;
+}
+#blocks {
+  margin: auto;
+}
+.b {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  margin: 10px;
+  position: relative;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#b1 {
+  background: #b7b6b6;
+  border: 3px solid #b7b6b6;
+  animation-name: b1;
+}
+#b2 {
+  background: #b7b6b6;
+  border: 3px solid #b7b6b6;
+  margin-left: 72.5px;
+  animation-name: b2;
+}
+#b3 {
+  background: #b7b6b6;
+  border: 3px solid #b7b6b6;
+  margin-top: -60px;
+  animation-name: b3;
+}
+#b4 {
+  background: #b7b6b6;
+  border: 3px solid #b7b6b6;
+  margin-left: 72.5px;
+  animation-name: b4;
+}
+
+@keyframes b1 {
+  0% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 62.5px;
+    bottom: 0px;
+    transform: rotate(90deg);
+  }
+  100% {
+    left: 62.5px;
+    bottom: -61.25px;
+    transform: rotate(90deg);
+  }
+}
+@keyframes b2 {
+  50% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: -61.25px;
+  }
+}
+@keyframes b3 {
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: -61.25px;
+  }
+}
+@keyframes b4 {
+  0% {
+    left: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: -62.5px;
+    top: 0px;
+    transform: rotate(90deg);
+  }
+  100% {
+    left: -62.5px;
+    top: -61.25px;
+    transform: rotate(90deg);
+  }
+}
+
+@media and and (max-width: 400px) {
+  #building {
+    width: 100%;
+  }
+  #caption {
+    display: none;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.accueil {
+  height: 75vh;
+  width: 100%;
+  background-color: #51686d;
+}
+@media screen and (max-width: 450px) {
+  .accueil {
+    height: 85vh;
+  }
+}
+
+.fond-curvy {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 5%;
+  display: block;
+  margin: 0;
+}
+
+.contenu {
+  position: relative;
+  z-index: 1000;
+}
+h1 {
+  font-size: 90px;
+  padding: 200px 0 0 10vw;
+  position: relative;
+  right: 8px;
+  color: #f1f1f1;
+}
+p {
+  font-size: 25px;
+
+  margin: 7px 0;
+  color: #1b1919;
+}
+label {
+  padding: 0 1em;
+  background-color: rgb(56, 44, 56);
+  color: wheat;
+}
+
+.pHome {
+  padding: 50px 0 0 10vw;
+  position: relative;
+  right: 8px;
+  font-size: 25px;
+  margin: auto;
+  color: white;
+  right: 8px;
+}
+#btnHome {
+  margin: 20px 0 0 10vw;
+  padding: 12px;
+  font-size: 20px;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.laptop {
+  width: 30vw;
+  position: absolute;
+  top: 100px;
+  right: 12%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #b7b6b6;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #b7b6b6;
+  overflow: hidden;
+  border-radius: 0.25em;
+  margin: 50px auto auto auto;
+}
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  color: black;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #362424;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: rgb(224, 235, 224);
+}
+
+.box-holder {
+  margin-top: 100px;
+
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box-holder .box {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  padding: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9e4e0;
+}
+
+#titreMap {
+  color: #51686d;
+  text-align: center;
+  margin-top: 200px;
+}
+#titreSelection {
+  color: #51686d;
+  text-align: center;
+  margin: auto auto 1em auto;
+}
+
+/*test*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia", sans-serif;
+}
+
+h2 {
+  color: #0a4870;
+  font-weight: 500;
+}
+.cardNatureZero {
+  background-image: url("../ImgCard/bois\ vincenne.jpg");
+}
+.cardNatureOne {
+  background-image: url("../ImgCard/champsDeMars.jpg");
+}
+.cardNatureTwo {
+  background-image: url("../ImgCard/canalDeLourq.jpg");
+}
+
+.cardDetenteZero {
+  background-image: url("../ImgMarker/dansLeNoir.jpg");
+}
+.cardDetenteOne {
+  background-image: url("../ImgMarker/flottaison.jpg");
+}
+.cardDetenteTwo {
+  background-image: url("../ImgMarker/sieste.jpg");
+}
+
+.cardDetenteTree {
+  background-image: url("../ImgMarker/jacuzzi.jpg");
+}
+.cardDetenteFour {
+  background-image: url("../ImgMarker/brocante.jpg");
+}
+
+.cardCultureZero {
+  background-image: url("../ImgMarker/museeParfum.jpg");
+}
+.cardCultureOne {
+  background-image: url("../ImgMarker/muséeCulture.jpg");
+}
+.cardCultureTwo {
+  background-image: url("../ImgMarker/streetArt.jpg");
+}
+.cardCultureTree {
+  background-image: url("../ImgMarker/jardinDesPlante.jpg");
+}
+.cardCultureFour {
+  background-image: url("../ImgMarker/chatParis.jpeg");
+}
+
+.cardFoodZero {
+  background-image: url("../ImgFood/food1.jpg");
+}
+.cardFoodOne {
+  background-image: url("../ImgFood/food2.jpg");
+}
+.cardFoodTwo {
+  background-image: url("../ImgFood/food3.jpg");
+}
+.cardFoodTree {
+  background-image: url("../ImgFood/food4.jpg");
+}
+.cardFoodFour {
+  background-image: url("../ImgFood/resto.jpeg");
+}
+/* Nature background */
+.cardNatureZero {
+  background-image: url("../ImgNature/vincenne.jpg");
+}
+.cardNatureOne {
+  background-image: url("../ImgNature/canalDeLourq.jpg");
+}
+.cardNatureTwo {
+  background-image: url("../ImgNature/champsDeMars.jpg");
+}
+.cardNatureTree {
+  background-image: url("../ImgNature/luxembourf.jpg");
+}
+.cardNatureFour {
+  background-image: url("../ImgNature/jardinage.jpg");
+}
+ul {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+ul .booking-card {
+  position: relative;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex: 0 0 300px;
+  flex-direction: column;
+  margin: 20px;
+  margin-bottom: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: #0a4870;
+  transition: 0.1s;
+}
+ul .booking-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 72, 112, 0);
+  transition: 0.1s;
+}
+ul .booking-card .book-container {
+  height: 200px;
+}
+ul .booking-card .book-container .content {
+  position: relative;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-200px);
+  transition: 0.3s;
+}
+ul .booking-card .book-container .content .btn {
+  border: 3px solid white;
+  padding: 10px 15px;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+ul .booking-card .book-container .content .btn:hover {
+  background: white;
+  border: 0px solid white;
+  color: #0a4870;
+}
+ul .booking-card .informations-container {
+  flex: 1 0 auto;
+  padding: 20px;
+  background: #f0f0f0;
+  transform: translateY(206px);
+  transition: 0.3s;
+}
+ul .booking-card .informations-container .title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+ul .booking-card .informations-container .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 50px;
+  margin: auto;
+  background: #0a4870;
+}
+ul .booking-card .informations-container .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+ul .booking-card .informations-container .price .icon {
+  margin-right: 10px;
+}
+ul .booking-card .informations-container .more-information {
+  opacity: 0;
+  transition: 0.3s;
+}
+ul
+  .booking-card
+  .informations-container
+  .more-information
+  .info-and-date-container {
+  display: flex;
+}
+ul
+  .booking-card
+  .informations-container
+  .more-information
+  .info-and-date-container
+  .box {
+  flex: 1 0;
+  padding: 15px;
+  margin-top: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+ul
+  .booking-card
+  .informations-container
+  .more-information
+  .info-and-date-container
+  .box
+  .icon {
+  margin-bottom: 5px;
+}
+ul
+  .booking-card
+  .informations-container
+  .more-information
+  .info-and-date-container
+  .box.info {
+  color: #ec992c;
+  margin-right: 10px;
+}
+ul .booking-card .informations-container .more-information .disclaimer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #7d7d7d;
+}
+ul .booking-card:hover::before {
+  background: rgba(10, 72, 112, 0.6);
+}
+ul .booking-card:hover .book-container .content {
+  opacity: 1;
+  transform: translateY(0px);
+}
+ul .booking-card:hover .informations-container {
+  transform: translateY(0px);
+}
+ul .booking-card:hover .informations-container .more-information {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  ul .booking-card::before {
+    background: rgba(10, 72, 112, 0.6);
+  }
+  ul .booking-card .book-container .content {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  ul .booking-card .informations-container {
+    transform: translateY(0px);
+  }
+  ul .booking-card .informations-container .more-information {
+    opacity: 1;
+  }
+}
+.credits {
+  display: table;
+  background: #0a4870;
+  color: white;
+  line-height: 25px;
+  margin: 10px auto;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.credits a {
+  color: #e3ebf1;
+}
+
+@media screen and (max-width: 1024px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box-holder {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

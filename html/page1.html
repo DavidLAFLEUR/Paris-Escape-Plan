@@ -1,16 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C'est David qui essaye de changer le titre !</title>
-    <link rel="stylesheet" type="style/css" href="../style/page1.css"/>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/page1.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="accueil">
+      <div class="contenu">
+        <h1>Bon Plan <br/>Paris Escape Plan </h1>
+        <p   class="pHome">Decouvrez notre selection</p>
+        <img src="../Svg/map.svg" class="laptop" />
+        <button  id ="btnHome"type="button">C'est parti</button>
+      </div>
+      <img src="../Svg/22.svg" class="fond-curvy" />
+    </div>
 
+
+    <h2 id="titreMap">  A la recherche de découverte ?<br/>
+      Decouvrez Paris autrement</h2>
+    <div class="box-holder">
+      <div class="box box-a"><i class="fas fa-search-plus fa-3x"  style="color:#51686D;"></i></div>
+      <div class="box box-b"><i class="fab fa-periscope fa-3x" style="color:#51686D;"></i></div>
+      <div class="box box-c"><i class="fas fa-mobile-alt fa-3x" style="color:#51686D;"></i></div>
+ 
+    </div>
+    <div class="conteneurMap"  >
+      <h2 id="titreSelection">Nos selections</h2>
+      <div id="map-canvas"></div>
+      <div class="select">
+      
+        <select
+          id="type"
+          onchange="filterMarkers(this.value);admSelectCheck(this)"
+        >
+    </div>
+        <option value="start">Veuillez selectionner une categorie</option>
+        <option value="nature">Nature</option>
+        <option value="detente">Detente</option>
+        <option value="food">Food</option>
+        <option value="culturel">Culturel</option>
+      </select>
+    </div>
+    <div id="building">
+      <div id="blocks">
+        <div class="b" id="b1"></div>
+        <div class="b" id="b2"></div>
+        <div class="b" id="b3"></div>
+        <div class="b" id="b4"></div>
+      </div>
+      <div id="caption">Aucune catégorie selectionner...</div>
+    </div>
+    <main>
+      <article class="nature prettyprint">          
+<ul>
+
+
+  <li class="booking-card cardNatureZero" >
+    <div class="book-container">
+      <div class="content">
+        <button class="btn"onclick="window.open('https://www.parisinfo.com/musee-monument-paris/71314/Bois-de-Vincennes', '_blank');">Découvrir</button>
+      </div>
+    </div>
+    <div class="informations-container">
+      <h2 class="title">Bois de Vincennes et parc floral</h2>
+      <p class="sub-title">Jardin d'agronomie tropicale</p>
+      <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+        &ensp; 9h - 19h</p>
+      <div class="more-information">
+        <div class="info-and-date-container">
+          <div class="box info">
+            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+            </svg>
+            <p>Route de la Pyramide 75012 Paris</p>
+          </div>
+          
+        </div>
+        <p class="disclaimer">Le bois de Vincennes est un parc situé dans l'est de Paris. Avec une superficie de 995 hectares, dont la moitié boisée, c'est le plus grand espace vert parisien. De nombreuses infrastructures occupent le site.</p>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="booking-card cardNatureOne" >
+    <div class="book-container">
+      <div class="content">
+        <button class="btn" onclick="window.open('https://www.tourisme93.com/document.php?pagendx=453', '_blank');">Découvrir</button>
+      </div>
+    </div>
+    <div class="informations-container">
+      <h2 class="title">Canal de Lourcq</h2>
+      <p class="sub-title">Canal du Bassin parisien.</p>
+      <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+        &ensp; 6h - 19h</p>
+      <div class="more-information">
+        <div class="info-and-date-container">
+          <div class="box info">
+            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+            </svg>
+            <p>Bassin de la Villette à Paris</p>
+          </div>
+          
+        </div>
+        <p class="disclaimer">Le Canal de l'Ourcq va de Mareuil-sur-Ourcq au Bassin de La Villette. Construit au XIXe siècle pour alimenter Paris en eau potable, son visage ne cessera de changer. Traversant le département de Saint-Denis.</p>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="booking-card cardNatureTwo" >
+    <div class="book-container">
+      <div class="content">
+        <button class="btn" onclick="window.open('https://www.parisinfo.com/musee-monument-paris/71152/Parc-du-Champ-de-Mars', '_blank');">Découvrir</button>
+      </div>
+    </div>
+    <div class="informations-container">
+      <h2 class="title">Champs de Mars</h2>
+      <p class="sub-title">Un vaste jardin public</p>
+      <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+        &ensp; 6h - 19h</p>
+      <div class="more-information">
+        <div class="info-and-date-container">
+          <div class="box info">
+            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+            </svg>
+            <p>2 Allée Adrienne Lecouvreur 75007 </p>
+          </div>
+          
+        </div>
+        <p class="disclaimer"> Le Champ-de-Mars est un vaste jardin public, entièrement ouvert et situé à Paris dans le 7ᵉ arrondissement, entre la tour Eiffel au nord-ouest et l'École militaire au sud-est. </p>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="booking-card cardNatureTree">
+    <div class="book-container">
+      <div class="content">
+        <button class="btn" onclick="window.open('https://www.senat.fr/visite/jardin/index.html', '_blank');">Découvrir</button>
+      </div>
+    </div>
+    <div class="informations-container">
+      <h2 class="title">Jardin du Luxembourg</h2>
+      <p class="sub-title">Un jardin ouvert au public,</p>
+      <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+        &ensp; 7h - 17h</p>
+      <div class="more-information">
+        <div class="info-and-date-container">
+          <div class="box info">
+            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+            </svg>
+            <p>75006 Paris</p>
+          </div>
+        </div>
+        <p class="disclaimer">Situé en bordure de Saint-Germain-des-Prés et du quartier Latin, le jardin du Luxembourg s’inspire du jardin florentin Boboli a été créé à l’initiative de la reine Marie de Médicis en 1612. D’une superficie de 25 hectares.</p>
+      </div>
+    </div>
+  </li>
+
+
+  <li class="booking-card cardNatureFour" >
+    <div class="book-container">
+      <div class="content">
+        <button class="btn" onclick="window.open('https://www.paris.fr/equipements/maison-du-jardinage-pole-ressource-jardinage-urbain-1788', '_blank');">Découvrir</button>
+      </div>
+    </div>
+    <div class="informations-container">
+      <h2 class="title">Maison du Jardinage</h2>
+      <p class="sub-title">Jardiner bio</p>
+      <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+        &ensp; 9h - 19h</p>
+      <div class="more-information">
+        <div class="info-and-date-container">
+          <div class="box info">
+            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+            </svg>
+            <p>41 Rue Paul Belmondo 75012</p>
+          </div>
+          
+        </div>
+        <p class="disclaimer">Jardins partagés, jardins pédagogiques, Permis de végétaliser, jardins solidaires… tous participent au développement d’une trame verte.</p>
+      </div>
+    </div>
+  </li>
+</ul>
+      </article>
+ 
+
+      <article class="detente prettyprint">
+        <ul>
+          <li class="booking-card  cardDetenteZero">
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.lespadanslenoir.com/', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Dans le noir ?</h2>
+              <p class="sub-title">Soins (massages, gommages, visage…) </p>
+              <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
+                </svg>De 30 à 37 €</p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>65 Rue Montmartre
+                      75002 Paris 2</p>
+                  </div>
+                  
+                </div>
+                <p class="disclaimer"> La capitale française abritait déjà un restaurant Dans le Noir. Elle dispose désormais de son spa Dans le Noir ! L’expérience est unique : les soins (massages, gommages, visage…) sont exclusivement prodigués dans l’obscurité par une équipe de praticiens malvoyants ou non-voyants.</p>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="booking-card cardDetenteOne" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.lesbullesaflotter.fr/lesbullesaflotter-paris.php', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Les Bulles à flotter</h2>
+              <p class="sub-title">Centre de flottaison & Isolation sensorielle</p>
+              <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
+                </svg>De 60 à 250 €</p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p> 2 boulevard bastille - Paris 12</p>
+                  </div>
+                  
+                </div>
+                <p class="disclaimer">Relaxation, méditation, bien-êtreTentez l'expérience!
+                  Déconnectez-vous, récupérez physiquement, libérez votre esprit, ameliorez votre sommeil, prenez le temps de méditer
+                  L’isolation sensorielle par Flottaison est une technique de relaxation qui consiste à mettre au repos un maximum de sens.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="booking-card cardDetenteTwo" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://barasieste.com/', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Bar à sieste Zen</h2>
+              <p class="sub-title">Un instant detente</p>
+              <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
+                </svg>De 49 à 69€</p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>29 passage Choiseul 75002 Paris</p>
+                  </div>
+                </div>
+                <p class="disclaimer"> Matinée de folie, coup de barre après manger et le sentiment que l’on ne passera jamais l’après-midi si on ne ferme pas les yeux 10 min, ça vous parle ? Oui ! Et l’impossibilité de le faire, car vous êtes loin de chez vous et que fermer les yeux dans le métro, c'est risquer de se faire voler son portefeuille ou de plonger tête la première sur l’inconnu d’en face au coup de frein du train, vous connaissez aussi ?</p>
+              </div>
+            </div>
+          </li>
+          <li class="booking-card cardDetenteTree" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.spa-luxury-paris.fr/', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Un jacuzzi privatif</h2>
+              <p class="sub-title">Le lieu idéal </p>
+              <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
+                </svg>De 49 à 69€</p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>29 passage Choiseul 75002 Paris</p>
+                  </div>
+                </div>
+                <p class="disclaimer"> Un jacuzzi privatif, un sauna rien que pour vous, un bar privé avec réfrigérateur et un lit de plage, le tout dans l’ambiance de votre choix. Pour compléter cette idylle, un massage aux huiles chaudes. Vous voilà parti en vacances. En vérité, vous êtes au Spa Luxury Paris, mais vous l’avez déjà oublié. Ce Spa privatif insolite est le lieu qu’il vous faut pour passer un excellent moment en amoureux ou avec des amis !</p>
+              </div>
+            </div>
+          </li>
+          <li class="booking-card cardDetenteFour" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://brocabrac.fr/75/ ', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Brocantes, vide-greniers </h2>
+              <p class="sub-title">Découvrez les possibilités</p>
+              <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 8h - 14h</p>
+                 
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p> La Place d'Aligre, 75012</p>
+                  </div>
+                </div>
+                <p class="disclaimer">  Brocantes, vide-greniers et marchés éphémères de Paris vous donnent envie ? Alors découvrez la liste des possibilités pour chiner et faire de bonnes affaires la semaine et le week-end ! Attention, en raison du contexte sanitaire actuel, notez que certaines brocantes peuvent être annulées à la dernière minute par les organisateurs. Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel animi. </p>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+      </article>
+
+
+
+      
+      <article class="food prettyprint">
+
+        <ul>
+          <li class="booking-card  cardFoodZero">
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://troisfoisplusdepiment.fr/fr', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Trois fois plus de piments</h2>
+              <p class="sub-title">Restaurant</p>
+              <p class="price"> <img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 11h - 19h </p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p> 184 rue Saint-Martin
+                      75003</p>
+                  </div>
+                  
+                </div>
+                <p class="disclaimer">
+                  Avis aux palais attirés par la surenchère de sensations épicées : « Les piments peuvent causer du mal au ventre et de la diarrhée. A consommer avec modération ! ». Devant ce micro-boui-boui peu apprêté
+                   (murs de briques, tuyaux cuivrés et assises là où l’on peut) doté d’une mezzanine
+                </p>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="booking-card cardFoodOne" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://luzverde.fr/', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Luz verde </h2>
+              <p class="sub-title">Top Chef </p>
+              <p class="price"> <img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 11h - 19h </p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>24 rue Henry-Monnier
+                      Paris 75009</p>
+                  </div>
+                  
+                </div>
+                <p class="disclaimer"> 
+                  « Top Chef » mène à tout, même aux tacos ! Millésime 2017, Alexis Delassaux s’est lancé à donf dans les galettes de maïs, servies en duo, sur tables et guéridons de bois, ou au comptoir sous suspensions osier. 
+                  </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="booking-card cardFoodTwo" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.le6paulbert.com/', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Le 6 Paul Bert</h2>
+              <p class="sub-title">Des chefs prometteurs</p>
+              <p class="price"> <img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 11h - 19h</p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>6 rue Paul-Bert
+                      75011 </p>
+                  </div>
+                </div>
+                <p class="disclaimer"> Après avoir vu défiler des chefs prometteurs, (Louis-Philippe Riel, Kosuke Tada, Beau clugston…), la cave à manger du king de la rue Paul-Bert (Bertrand Auboyneau est aussi aux commandes du Bistrot Paul Bert, de L’Ecailler du Bistrot et de La Cave du Paul Bert !) Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi autem fuga? Qui. 
+                </p>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="booking-card cardFoodTree" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://grilleparis.com/', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Grillé</h2>
+              <p class="sub-title">Restaurant Grillé </p>
+              <p class="price"> 
+                <img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 11h - 19h</p>
+              </p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>15 rue Saint-Augustin Paris</p>
+                  </div>
+                </div>
+                <p class="disclaimer"> Avec leur « grillé » (traduction du turc kebab), Fred Peneau et Marie Carcassone redorent clairement le blason du salade-tomate- oignon ! Veau de lait d’Hugo Desnoyer, pain kurde bio cuit sur place, herbes d’Annie Bertin en pagaille… </p>
+              </div>
+            </div>
+          </li>
+
+
+
+
+          <li class="booking-card cardFoodFour" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.adar-paris.com/', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Adar  </h2>
+              <p class="sub-title">Restaurant</p>
+              <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 11h - 19h</p>
+                 
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>49 passage des Panoramas
+                      75002</p>
+                  </div>
+                </div>
+                <p class="disclaimer">Le Passage des Panoramas, nouveau passage obligé pour les jeunes chefs stars ? Après Shinichi Sato (Passage 53), Sven Chartier et Simone Tondo , le chef levantin Tamir Nahmias  l’a choisi pour asiler sa cantine de poche. </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+       
+      </article>
+
+
+
+      <article class="culturel prettyprint">
+       
+        <ul>
+          <li class="booking-card  cardCultureZero">
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://greeters.paris/le-musee-de-la-parfumerie-fragonard/', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Le musée de la parfumerie</h2>
+              <p class="sub-title">Fragonard - Paris Greeters </p>
+              <p class="price"> <img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 9h - 19h </p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p> 3-5 square louis jouvet 
+                      75009 paris</p>
+                  </div>
+                  
+                </div>
+                <p class="disclaimer">Inédit à Paris, le Musée du Parfum propose un concept muséal unique et expose de manière didactique toutes les étapes qui donnent vie à ce mythique objet de luxe et objet de notre quotidien : le parfum. Forte de son savoir-faire et de son expérience</p>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="booking-card cardCultureOne" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.galleriacontinua.com/exhibitions/curated-by-jr-319#top', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Exposition</h2>
+              <p class="sub-title">Galleria Continua</p>
+              <p class="price">
+                <img src="https://img.icons8.com/cute-clipart/64/000000/calendar-2.png"/>
+                &ensp;20/01/2021 - 20/04/2021</p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p> 2 boulevard bastille - Paris 12</p>
+                  </div>
+                  
+                </div>
+                <p class="disclaimer"> Pour la première exposition orchestrée dans ce lieu de 800 m2 répartis sur 2 étages et un sous-sol, c’est JR qui  est aux manettes.
+                  </p>
+              </div>
+            </div>
+          </li>
+
+          <li class="booking-card cardCultureTwo" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.parisinfo.com/decouvrir-paris/balades-a-paris/balade-street-art-dans-le-13e-arrondissement', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Balade Street Art</h2>
+              <p class="sub-title">dans le 13e arrondissement</p>
+              <p class="price"> <img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 9h - 19h</p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>Au sud de Paris, le 13e arrondissement </p>
+                  </div>
+                </div>
+                <p class="disclaimer">  Au sud de Paris, le 13e arrondissement regorge de fresques de street art. Dès les années 1960, ce quartier industriel a vu ses façades recouvertes par des artistes qui souhaitaient embellir leur lieu de vie. Avec l’appui de la mairie du 13e arrondissement.</p>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="booking-card cardCultureTree" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.jardindesplantesdeparis.fr/fr/horaires-tarifs-acces-2718?tid=5683#horaires', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Jardin des plantes</h2>
+              <p class="sub-title">Le lieu idéal </p>
+              <p class="price"> 
+                <img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 9h - 19h</p>
+              </p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>57 RUE CUVIER 75005 PARIS</p>
+                  </div>
+                </div>
+                <p class="disclaimer">  Jardin alpin, écologique, roseraie, École de botanique… Partez à la découverte des onze jardins qui, ensemble, composent un Jardin des Plantes unique et multiple, en perpétuelle évolution et ouvert durant les restrictions COVID".</p>
+              </div>
+            </div>
+          </li>
+
+
+
+
+          <li class="booking-card cardCultureFour" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.timeout.fr/paris/actualites/des-sculptures-geantes-du-chat-de-geluck-sinstallent-sur-les-champs-elysees-031621', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Des sculptures géantes  </h2>
+              <p class="sub-title">Chat de Geluck</p>
+              <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 8h - 19h</p>
+                 
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>Champs-Elysées</p>
+                  </div>
+                </div>
+                <p class="disclaimer">En ces temps de crise sanitaire (et de crise de la culture tout court), voici une expo XXL en plein air — gratuite de surcroît — qui devrait vous offrir un grand bol d’art frais. Vingt félins en bronze à l’effigie du célèbre matou de la BD Le Chat (du belge Philippe Geluck) déboulent du 26 mars au 9 juin sur les Champs-Elysées. Miaou !. </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+       
+      </article>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAURsom7c-jmbNERN0wVqb4OzVten2Hy24&v=weekly&language=fr&dummy=dummy.js"></script>
     
-<script type="text/javascript" src="../js/page1.js"></script>
-</body>
+ 
+    <script  src="../js/page1.js"></script>
+  </body>
 </html>
