@@ -43,7 +43,7 @@ emailjs.init("user_12r8qbCQeqvZWHaDwVX7o");
     <section class="bienvenue">
       
       <h1>
-        Plan Escape Paris
+        PLAN ESACAPE PARIS
       </h1>
       
       <img class="imagedeParis" src="./images/paris-at-sunset 1.png" alt="image de Paris"/>
@@ -85,7 +85,7 @@ emailjs.init("user_12r8qbCQeqvZWHaDwVX7o");
             
             <div class="bonplans3">
 
-            <div class = "bonplan">
+            <div class = "bonplan voyage">
                 <a href="./html/page1.html">
                     <img src = "./images/Group 15.png" alt = "BonPlansVoyage" class="image"/>
                 </a>
@@ -176,27 +176,32 @@ emailjs.init("user_12r8qbCQeqvZWHaDwVX7o");
       <ul class="my-form-ul">
         <li>
           <div class="my-form-ipt">
-            <input type="text" id="name" placeholder="Nom" required>
+            <label for="name">Nom</label>
+            <input type="text" id="name">
 
-            <input type="text" id="prenom" placeholder="Prenom" required>
+            <label for="texte">Prénom</label>
+            <input type="text" id="prenom">
           </div>
         </li>
 
         <li>
           <div class="my-form-ipt">
-            <input type="email" id="email" placeholder="Email" required>
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
 
-            <input type="tel" id="tel" placeholder="Tel">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="tel">
           </div>
         </li>
 
         <li>
-          <textarea type ="text" id="message"placeholder="Message"></textarea>
+          <label for="Message">Message</label>
+          <textarea type ="text" id="message"></textarea>
         </li>
 
         <li>
           <div class="my-form-button">
-            <button id="sendmail" onclick="sendMail()">Envoyer</button>
+            <button id="sendmail" class = "favorite" onclick="sendMail()">Envoyer</button>
           </div>
         </li>
       </ul>
