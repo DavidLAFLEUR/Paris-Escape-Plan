@@ -127,13 +127,14 @@ h1{
   left: 70%;
   color: #51586D;
   z-index: 999;
-  font-size: 48px;
+  font-size: clamp(25px, 5vw, 48px);
   font-family: Oswald, sans-serif;
 
 }
+
 .imagedeParis{
-  width: 100%;
-  height: 700px;
+  max-width: 100%;
+  /* height: 700px; */
   position: relative;
 }
 
@@ -150,6 +151,7 @@ h1{
 .bon-plans-h2{
   margin-top: 60px;
   margin-bottom: 60px;
+  font-size: clamp(18px, 5vw, 25px) !important;
 
 }
 
@@ -166,6 +168,7 @@ h1{
 
 .bonsplans2{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 60px 60px;
   margin-top: 25px;
@@ -174,9 +177,15 @@ h1{
 
 .bonplans3{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 60px 60px;
   margin-bottom: 25px;
+}
+
+.voyage img {
+  max-width: 100%;
+  /* margin : 0px 30px 0px; */
 }
 
 .lasttitles{
@@ -192,7 +201,7 @@ h1{
 
 .lasttips{
   display: flex;
-  
+  flex-wrap: wrap;
   justify-content: center;
   gap : 60px;
 }
@@ -222,25 +231,37 @@ h3{
 .my-form-container{
   display: flex;
   width: 1060px;
-  height: 280px;
+  height: 350px;
   border: 1px black solid;
   margin-top: 40px;
   margin-bottom: 100px;
   padding: 10px;
   border-radius: 8px;
 }
+
 .my-form-image{
-  width: 50%;
+  width: 70%;
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 30% 70%;
   grid-template-areas: 
   "High1 High1"
   "Low1 Low2";
+  
 }
 
 .my-form p{
   grid-area: High1;
+  font-size: 20px;
+  font-style: italic;
+  color: #51586D;
+  text-align: start;
+  margin-left: 6%;
+
+}
+
+.my-form-image img {
+  transform: translate(-100px, -20px);
 }
 
 .Contact-Us{
@@ -248,9 +269,9 @@ h3{
   grid-area: Low2;
 }
 
-.my-form-ul{
-  height: 180px;
-  width: 450px;
+.my-form-ul-container {
+  margin-right: 6%;
+  color: #51586D;
 }
 
 li{
@@ -258,18 +279,56 @@ li{
 
 }
 
-input, textarea{
-  width: 450px;
+input {
+  display: flex;
+  width: 400px;
+  height: 20px;
+  background-color: #E9E4E0;
+  /* border-style: solid ; */
+  /* border-radius: 5% ; */
 }
 
-input{
-display: flex;
-border-radius: 4px;
+label {
+
 }
 
-textarea{
+
+textarea {
+  width: 400px;
+  height: 40px;
   border-radius: 4px;
+  border: 1px solid black;
   resize: none;
+  background-color: #E9E4E0;
+
+}
+
+.favorite {
+ 
+  line-height: 2;
+  padding: 0 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: #51686D;
+  /* background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0)); */
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.favorite:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.favorite :active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 /* FOOTER */
@@ -356,4 +415,6 @@ padding: 45px 50px;
 #scroll_to_top img {
   width: 25px;
 }
+
+
 	
