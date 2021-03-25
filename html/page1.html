@@ -13,9 +13,9 @@
     <div class="accueil">
       <div class="contenu">
         <h1>Bon Plan <br/>Paris Escape Plan </h1>
-        <p   class="pHome">Decouvrez notre selection</p>
+        <p class="pHome">Decouvrez notre selection</p>
         <img src="../Svg/map.svg" class="laptop" />
-        <button  id ="btnHome"type="button">C'est parti</button>
+        <button  id ="btnHome" type="button"> <a  href="#carte"> C'est parti</a></button>
       </div>
       <img src="../Svg/22.svg" class="fond-curvy" />
     </div>
@@ -23,13 +23,15 @@
 
     <h2 id="titreMap">  A la recherche de découverte ?<br/>
       Decouvrez Paris autrement</h2>
-    <div class="box-holder">
-      <div class="box box-a"><i class="fas fa-search-plus fa-3x"  style="color:#51686D;"></i></div>
-      <div class="box box-b"><i class="fab fa-periscope fa-3x" style="color:#51686D;"></i></div>
-      <div class="box box-c"><i class="fas fa-mobile-alt fa-3x" style="color:#51686D;"></i></div>
- 
-    </div>
-    <div class="conteneurMap"  >
+
+      <div class="box-holder">
+        <div class="box box-a"><i class="fas fa-search-plus fa-3x"  style="color:#51686D;"></i></div>
+        <div class="box box-b"><i class="fab fa-periscope fa-3x" style="color:#51686D;"></i></div>
+        <div class="box box-c"><i class="fas fa-mobile-alt fa-3x" style="color:#51686D;"></i></div>
+   
+      </div>
+  
+    <div class="conteneurMap" id="carte"  >
       <h2 id="titreSelection">Nos selections</h2>
       <div id="map-canvas"></div>
       <div class="select">
@@ -46,15 +48,7 @@
         <option value="culturel">Culturel</option>
       </select>
     </div>
-    <div id="building">
-      <div id="blocks">
-        <div class="b" id="b1"></div>
-        <div class="b" id="b2"></div>
-        <div class="b" id="b3"></div>
-        <div class="b" id="b4"></div>
-      </div>
-      <div id="caption">Aucune catégorie selectionner...</div>
-    </div>
+ 
     <main>
       <article class="nature prettyprint">          
 <ul>
@@ -68,7 +62,7 @@
     </div>
     <div class="informations-container">
       <h2 class="title">Bois de Vincennes et parc floral</h2>
-      <p class="sub-title">Jardin d'agronomie tropicale</p>
+      <p class="sub-title">Jardin d'agronomie </p>
       <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
         &ensp; 9h - 19h</p>
       <div class="more-information">
@@ -77,7 +71,7 @@
             <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
               <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
             </svg>
-            <p>Route de la Pyramide 75012 Paris</p>
+            <p>Route de la Pyramide 75012</p>
           </div>
           
         </div>
@@ -158,7 +152,8 @@
             <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
               <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
             </svg>
-            <p>75006 Paris</p>
+            <p>Jardin du Luxembourg
+                75006 Paris</p>
           </div>
         </div>
         <p class="disclaimer">Situé en bordure de Saint-Germain-des-Prés et du quartier Latin, le jardin du Luxembourg s’inspire du jardin florentin Boboli a été créé à l’initiative de la reine Marie de Médicis en 1612. D’une superficie de 25 hectares.</p>
@@ -192,7 +187,33 @@
       </div>
     </div>
   </li>
+
+  <li class="booking-card cardNatureFive" >
+    <div class="book-container">
+      <div class="content">
+        <button class="btn" onclick="window.open('https://www.parisinfo.com/musee-monument-paris/71494/Bois-de-Boulogne', '_blank');">Découvrir</button>
+      </div>
+    </div>
+    <div class="informations-container">
+      <h2 class="title">Bois de Boulogne</h2>
+      <p class="sub-title">Canal du Bassin parisien.</p>
+      <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+        &ensp; 6h - 19h</p>
+      <div class="more-information">
+        <div class="info-and-date-container">
+          <div class="box info">
+            <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+            </svg>
+            <p> Bois de Boulogne 75016 PARIS </p>
+          </div>
+        </div>
+        <p class="disclaimer">Le bois de Boulogne est une étendue boisée, située dans le 16 arrondissement de Paris. Couvrant une superficie de 846 hectares dans l'ouest de la ville. </p>
+      </div>
+    </div>
+  </li>
 </ul>
+
       </article>
  
 
@@ -206,7 +227,7 @@
             </div>
             <div class="informations-container">
               <h2 class="title">Dans le noir ?</h2>
-              <p class="sub-title">Soins (massages, gommages, visage…) </p>
+              <p class="sub-title">Soins (massages...) </p>
               <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
                 </svg>De 30 à 37 €</p>
@@ -221,7 +242,7 @@
                   </div>
                   
                 </div>
-                <p class="disclaimer"> La capitale française abritait déjà un restaurant Dans le Noir. Elle dispose désormais de son spa Dans le Noir ! L’expérience est unique : les soins (massages, gommages, visage…) sont exclusivement prodigués dans l’obscurité par une équipe de praticiens malvoyants ou non-voyants.</p>
+                <p class="disclaimer"> La capitale française abritait déjà un restaurant Dans le Noir. Elle dispose désormais de son spa Dans le Noir ! L’expérience est unique : les soins (massages, gommages, visage…).</p>
               </div>
             </div>
           </li>
@@ -235,7 +256,7 @@
             </div>
             <div class="informations-container">
               <h2 class="title">Les Bulles à flotter</h2>
-              <p class="sub-title">Centre de flottaison & Isolation sensorielle</p>
+              <p class="sub-title">Centre de flottaison </p>
               <p class="price"><svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
                   <path fill="currentColor" d="M3,6H21V18H3V6M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M7,8A2,2 0 0,1 5,10V14A2,2 0 0,1 7,16H17A2,2 0 0,1 19,14V10A2,2 0 0,1 17,8H7Z" />
                 </svg>De 60 à 250 €</p>
@@ -251,10 +272,11 @@
                 </div>
                 <p class="disclaimer">Relaxation, méditation, bien-êtreTentez l'expérience!
                   Déconnectez-vous, récupérez physiquement, libérez votre esprit, ameliorez votre sommeil, prenez le temps de méditer
-                  L’isolation sensorielle par Flottaison est une technique de relaxation qui consiste à mettre au repos un maximum de sens.</p>
+                  .</p>
               </div>
             </div>
           </li>
+
 
           <li class="booking-card cardDetenteTwo" >
             <div class="book-container">
@@ -277,10 +299,12 @@
                     <p>29 passage Choiseul 75002 Paris</p>
                   </div>
                 </div>
-                <p class="disclaimer"> Matinée de folie, coup de barre après manger et le sentiment que l’on ne passera jamais l’après-midi si on ne ferme pas les yeux 10 min, ça vous parle ? Oui ! Et l’impossibilité de le faire, car vous êtes loin de chez vous et que fermer les yeux dans le métro, c'est risquer de se faire voler son portefeuille ou de plonger tête la première sur l’inconnu d’en face au coup de frein du train, vous connaissez aussi ?</p>
+                <p class="disclaimer"> Matinée de folie, coup de barre après manger et le sentiment que l’on ne passera jamais l’après-midi si on ne ferme pas les yeux 10 min, ça vous parle ? Oui ! Et l’impossibilité de le faire.</p>
               </div>
             </div>
           </li>
+
+
           <li class="booking-card cardDetenteTree" >
             <div class="book-container">
               <div class="content">
@@ -302,10 +326,12 @@
                     <p>29 passage Choiseul 75002 Paris</p>
                   </div>
                 </div>
-                <p class="disclaimer"> Un jacuzzi privatif, un sauna rien que pour vous, un bar privé avec réfrigérateur et un lit de plage, le tout dans l’ambiance de votre choix. Pour compléter cette idylle, un massage aux huiles chaudes. Vous voilà parti en vacances. En vérité, vous êtes au Spa Luxury Paris, mais vous l’avez déjà oublié. Ce Spa privatif insolite est le lieu qu’il vous faut pour passer un excellent moment en amoureux ou avec des amis !</p>
+                <p class="disclaimer"> Un jacuzzi privatif, un sauna rien que pour vous, un bar privé avec réfrigérateur et un lit de plage, le tout dans l’ambiance de votre choix. Pour compléter cette idylle, un massage aux huiles chaudes!</p>
               </div>
             </div>
           </li>
+
+
           <li class="booking-card cardDetenteFour" >
             <div class="book-container">
               <div class="content">
@@ -327,7 +353,34 @@
                     <p> La Place d'Aligre, 75012</p>
                   </div>
                 </div>
-                <p class="disclaimer">  Brocantes, vide-greniers et marchés éphémères de Paris vous donnent envie ? Alors découvrez la liste des possibilités pour chiner et faire de bonnes affaires la semaine et le week-end ! Attention, en raison du contexte sanitaire actuel, notez que certaines brocantes peuvent être annulées à la dernière minute par les organisateurs. Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel animi. </p>
+                <p class="disclaimer">  Brocantes, vide-greniers et marchés éphémères de Paris vous donnent envie ? Alors découvrez la liste des possibilités pour chiner et faire de bonnes affaires la semaine et le week-end ! </p>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="booking-card  cardDetenteFive">
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.parisinfo.com/transports/90892/Bords-de-Seine', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Les Bords de Seines</h2>
+              <p class="sub-title">  Balade le long de la Seine </p>
+              <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 6h - 19h</p>
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p> Quai d'Orsay, 75000 Paris</p>
+                  </div>
+                  
+                </div>
+                <p class="disclaimer">Les bords de Seines sont en grande partie entièrement réservés aux piétons et avec de nombreuses activités gratuites : promenades verdoyantes, pique-niques, parcours sportifs….</p>
               </div>
             </div>
           </li>
@@ -342,12 +395,12 @@
 
         <ul>
           <li class="booking-card  cardFoodZero">
-            <div class="book-container">
+              <div class="book-container">
               <div class="content">
                 <button class="btn" onclick="window.open('https://troisfoisplusdepiment.fr/fr', '_blank');">Découvrir</button>
               </div>
-            </div>
-            <div class="informations-container">
+              </div>
+              <div class="informations-container">
               <h2 class="title">Trois fois plus de piments</h2>
               <p class="sub-title">Restaurant</p>
               <p class="price"> <img src="https://img.icons8.com/android/24/000000/clock.png"/>
@@ -358,17 +411,17 @@
                     <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
                       <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
                     </svg>
-                    <p> 184 rue Saint-Martin
+                    <p > 184 rue Saint-Martin
                       75003</p>
                   </div>
                   
                 </div>
                 <p class="disclaimer">
-                  Avis aux palais attirés par la surenchère de sensations épicées : « Les piments peuvent causer du mal au ventre et de la diarrhée. A consommer avec modération ! ». Devant ce micro-boui-boui peu apprêté
-                   (murs de briques, tuyaux cuivrés et assises là où l’on peut) doté d’une mezzanine
+                  Avis aux palais attirés par la surenchère de sensations épicées : « Les piments peuvent causer du mal au ventre et de la diarrhée.
+   
                 </p>
               </div>
-            </div>
+              </div>
           </li>
 
 
@@ -395,7 +448,7 @@
                   
                 </div>
                 <p class="disclaimer"> 
-                  « Top Chef » mène à tout, même aux tacos ! Millésime 2017, Alexis Delassaux s’est lancé à donf dans les galettes de maïs, servies en duo, sur tables et guéridons de bois, ou au comptoir sous suspensions osier. 
+                  « Top Chef » mène à tout, même aux tacos ! Millésime 2017, Alexis Delassaux s’est lancé à donf dans les galettes de maïs, servies en duo. 
                   </p>
               </div>
             </div>
@@ -419,10 +472,10 @@
                       <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
                     </svg>
                     <p>6 rue Paul-Bert
-                      75011 </p>
+                      75011 Paris </p>
                   </div>
                 </div>
-                <p class="disclaimer"> Après avoir vu défiler des chefs prometteurs, (Louis-Philippe Riel, Kosuke Tada, Beau clugston…), la cave à manger du king de la rue Paul-Bert (Bertrand Auboyneau est aussi aux commandes du Bistrot Paul Bert, de L’Ecailler du Bistrot et de La Cave du Paul Bert !) Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi autem fuga? Qui. 
+                <p class="disclaimer"> Après avoir vu défiler des chefs prometteurs, (Louis-Philippe Riel, Kosuke Tada, Beau clugston…), la cave à manger du king de la rue Paul-Bert. 
                 </p>
               </div>
             </div>
@@ -451,7 +504,7 @@
                     <p>15 rue Saint-Augustin Paris</p>
                   </div>
                 </div>
-                <p class="disclaimer"> Avec leur « grillé » (traduction du turc kebab), Fred Peneau et Marie Carcassone redorent clairement le blason du salade-tomate- oignon ! Veau de lait d’Hugo Desnoyer, pain kurde bio cuit sur place, herbes d’Annie Bertin en pagaille… </p>
+                <p class="disclaimer"> Avec leur « grillé » (traduction du turc kebab), Fred Peneau et Marie Carcassone redorent clairement le blason du salade-tomate- oignon ! Veau de lait d’Hugo Desnoyer. </p>
               </div>
             </div>
           </li>
@@ -481,13 +534,39 @@
                       75002</p>
                   </div>
                 </div>
-                <p class="disclaimer">Le Passage des Panoramas, nouveau passage obligé pour les jeunes chefs stars ? Après Shinichi Sato (Passage 53), Sven Chartier et Simone Tondo , le chef levantin Tamir Nahmias  l’a choisi pour asiler sa cantine de poche. </p>
+                <p class="disclaimer">Le Passage des Panoramas, nouveau passage obligé pour les jeunes chefs stars ? Après Shinichi Sato (Passage 53), Sven Chartier et Simone Tondo , le chef levantin Tamir Nahmias . </p>
               </div>
             </div>
           </li>
-        </ul>
-
-       
+          <li class="booking-card  cardFoodFive">
+              <div class="book-container">
+                  <div class="content">
+                      <button class="btn" onclick="window.open('https://www.facebook.com/cezamsaintdenis/?ref=page_internal', '_blank');">Découvrir</button>
+                    </div>
+                </div>
+                <div class="informations-container">
+                    <h2 class="title">Le sezame</h2>
+                    <p class="sub-title">Restaurant</p>
+                    <p class="price"> <img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                        &ensp; 11h - 1h </p>
+                        <div class="more-information">
+                            <div class="info-and-date-container">
+                                <div class="box info">
+                                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                                    </svg>
+                                    <p> 1 Avenue du Colonel Fabien 93200 </p>
+                                </div>
+                                
+                            </div>
+                            <p class="disclaimer">
+                                Nous prenons les mesures nécessaires afin de maintenir la livraison de vos plats préférés dans les meilleures conditions de protection pour vous et nos collaborateurs via Uber Eats & Deliveroo ! 
+                                
+                            </p>
+                        </div>
+                    </div>
+                </li>                
+            </ul>
       </article>
 
 
@@ -517,7 +596,7 @@
                   </div>
                   
                 </div>
-                <p class="disclaimer">Inédit à Paris, le Musée du Parfum propose un concept muséal unique et expose de manière didactique toutes les étapes qui donnent vie à ce mythique objet de luxe et objet de notre quotidien : le parfum. Forte de son savoir-faire et de son expérience</p>
+                <p class="disclaimer">Inédit à Paris, le Musée du Parfum propose un concept muséal unique et expose de manière didactique toutes les étapes qui donnent vie à ce mythique objet de luxe et objet de notre quotidien : le parfum.</p>
               </div>
             </div>
           </li>
@@ -534,7 +613,7 @@
               <p class="sub-title">Galleria Continua</p>
               <p class="price">
                 <img src="https://img.icons8.com/cute-clipart/64/000000/calendar-2.png"/>
-                &ensp;20/01/2021 - 20/04/2021</p>
+                &ensp;20/04/2021</p>
               <div class="more-information">
                 <div class="info-and-date-container">
                   <div class="box info">
@@ -545,7 +624,7 @@
                   </div>
                   
                 </div>
-                <p class="disclaimer"> Pour la première exposition orchestrée dans ce lieu de 800 m2 répartis sur 2 étages et un sous-sol, c’est JR qui  est aux manettes.
+                <p class="disclaimer"> Pour la première exposition orchestrée dans ce lieu de 800 m2 répartis sur 2 étages et un sous-sol, c’est JR qui  est aux manettes Lorem, ipsum dolor sit amet.
                   </p>
               </div>
             </div>
@@ -559,7 +638,7 @@
             </div>
             <div class="informations-container">
               <h2 class="title">Balade Street Art</h2>
-              <p class="sub-title">dans le 13e arrondissement</p>
+              <p class="sub-title">13e arrondissement</p>
               <p class="price"> <img src="https://img.icons8.com/android/24/000000/clock.png"/>
                 &ensp; 9h - 19h</p>
               <div class="more-information">
@@ -571,7 +650,7 @@
                     <p>Au sud de Paris, le 13e arrondissement </p>
                   </div>
                 </div>
-                <p class="disclaimer">  Au sud de Paris, le 13e arrondissement regorge de fresques de street art. Dès les années 1960, ce quartier industriel a vu ses façades recouvertes par des artistes qui souhaitaient embellir leur lieu de vie. Avec l’appui de la mairie du 13e arrondissement.</p>
+                <p class="disclaimer">  Au sud de Paris, le 13e arrondissement regorge de fresques de street art. Dès les années 1960, ce quartier industriel a vu ses façades recouvertes par des artistes.</p>
               </div>
             </div>
           </li>
@@ -599,11 +678,10 @@
                     <p>57 RUE CUVIER 75005 PARIS</p>
                   </div>
                 </div>
-                <p class="disclaimer">  Jardin alpin, écologique, roseraie, École de botanique… Partez à la découverte des onze jardins qui, ensemble, composent un Jardin des Plantes unique et multiple, en perpétuelle évolution et ouvert durant les restrictions COVID".</p>
+                <p class="disclaimer">  Jardin alpin, écologique, roseraie, École de botanique… Partez à la découverte des onze jardins qui, ensemble, composent un Jardin des Plantes unique et multiple.</p>
               </div>
             </div>
           </li>
-
 
 
 
@@ -625,10 +703,37 @@
                     <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
                       <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
                     </svg>
-                    <p>Champs-Elysées</p>
+                    <p>Avenur des Champs-Elysées, paris</p>
                   </div>
                 </div>
-                <p class="disclaimer">En ces temps de crise sanitaire (et de crise de la culture tout court), voici une expo XXL en plein air — gratuite de surcroît — qui devrait vous offrir un grand bol d’art frais. Vingt félins en bronze à l’effigie du célèbre matou de la BD Le Chat (du belge Philippe Geluck) déboulent du 26 mars au 9 juin sur les Champs-Elysées. Miaou !. </p>
+                <p class="disclaimer">En ces temps de crise sanitaire (et de crise de la culture tout court), voici une expo XXL en plein air — gratuite de surcroît —. </p>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="booking-card cardCultureFive" >
+            <div class="book-container">
+              <div class="content">
+                <button class="btn" onclick="window.open('https://www.paris.fr/equipements/bibliotheque-historique-de-la-ville-de-paris-bhvp-16', '_blank');">Découvrir</button>
+              </div>
+            </div>
+            <div class="informations-container">
+              <h2 class="title">Bibliothèque Historique  </h2>
+              <p class="sub-title">De la Ville de Paris</p>
+              <p class="price"><img src="https://img.icons8.com/android/24/000000/clock.png"/>
+                &ensp; 10h - 17h30</p>
+                 
+              <div class="more-information">
+                <div class="info-and-date-container">
+                  <div class="box info">
+                    <svg class="icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+                    </svg>
+                    <p>24 Rue Pavée, 75004 Paris</p>
+                  </div>
+                </div>
+                <p class="disclaimer">La Bibliothèque historique de la ville de Paris est une bibliothèque publique spécialisée dans l'histoire de Paris et de l'Île-de-France. </p>
               </div>
             </div>
           </li>
