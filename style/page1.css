@@ -21,21 +21,6 @@
   height: 100px;
 }
 
-/* main {
-  /* margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 4fr));
-  grid-gap: 20px;
-  align-items: center; 
-}
-
-main > article {
-  /* border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3); 
-  padding: 5px;
-} 
-*/
-
 .text {
   padding: 0 20px 20px;
 }
@@ -47,19 +32,16 @@ main > article {
   width: 100%;
 }
 
-.prettyprint {
-  display: none;
-}
-
 #caption {
   padding-left: 50px;
   position: relative;
   margin: auto;
 }
 #building {
-  display: flex;
+  display: none;
+  /* display: flex;
   width: 250px;
-  margin: 50px auto auto auto;
+  margin: 50px auto auto auto; */
 }
 #blocks {
   margin: auto;
@@ -281,6 +263,27 @@ select {
   color: rgb(224, 235, 224);
 }
 
+#titreMap {
+  color: #51686d;
+  text-align: center;
+  margin-top: 200px;
+}
+#titreSelection {
+  color: #51686d;
+  text-align: center;
+  margin: auto auto 1em auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sofia", sans-serif;
+}
+
+h2 {
+  color: #0a4870;
+  font-weight: 500;
+}
 .box-holder {
   margin-top: 100px;
 
@@ -303,73 +306,48 @@ select {
   justify-content: center;
   background-color: #e9e4e0;
 }
-
-#titreMap {
-  color: #51686d;
-  text-align: center;
-  margin-top: 200px;
-}
-#titreSelection {
-  color: #51686d;
-  text-align: center;
-  margin: auto auto 1em auto;
-}
-
-/*test*/
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Sofia", sans-serif;
-}
-
-h2 {
-  color: #0a4870;
-  font-weight: 500;
-}
-.cardNatureZero {
-  background-image: url("../ImgCard/bois\ vincenne.jpg");
-}
-.cardNatureOne {
-  background-image: url("../ImgCard/champsDeMars.jpg");
-}
-.cardNatureTwo {
-  background-image: url("../ImgCard/canalDeLourq.jpg");
-}
+/*background detente*/
 
 .cardDetenteZero {
-  background-image: url("../ImgMarker/dansLeNoir.jpg");
+  background-image: url("../ImgDetente/dansLeNoir.jpg");
 }
 .cardDetenteOne {
-  background-image: url("../ImgMarker/flottaison.jpg");
+  background-image: url("../ImgDetente/flottaison.jpg");
 }
 .cardDetenteTwo {
-  background-image: url("../ImgMarker/sieste.jpg");
+  background-image: url("../ImgDetente/sieste.jpg");
 }
-
 .cardDetenteTree {
-  background-image: url("../ImgMarker/jacuzzi.jpg");
+  background-image: url("../ImgDetente/jacuzzi.jpg");
 }
 .cardDetenteFour {
-  background-image: url("../ImgMarker/brocante.jpg");
+  background-image: url("../ImgDetente/brocante.jpg");
 }
+.cardDetenteFive {
+  background-image: url("../ImgDetente/bordDeSeine.jpg");
+}
+/*background culture*/
 
 .cardCultureZero {
-  background-image: url("../ImgMarker/museeParfum.jpg");
+  background-image: url("../ImgCulture/museeParfum.jpg");
 }
 .cardCultureOne {
-  background-image: url("../ImgMarker/muséeCulture.jpg");
+  background-image: url("../ImgCulture/muséeCulture.jpg");
 }
 .cardCultureTwo {
-  background-image: url("../ImgMarker/streetArt.jpg");
+  background-image: url("../ImgCulture/streetArt.jpg");
 }
 .cardCultureTree {
-  background-image: url("../ImgMarker/jardinDesPlante.jpg");
+  background-image: url("../ImgCulture/jardinDesPlante.jpg");
 }
 .cardCultureFour {
-  background-image: url("../ImgMarker/chatParis.jpeg");
+  background-image: url("../ImgCulture/chatParis.jpeg");
+}
+.cardCultureFive {
+  background-image: url("../ImgCulture/bilbio.jpg");
 }
 
+/*background food*/
 .cardFoodZero {
   background-image: url("../ImgFood/food1.jpg");
 }
@@ -385,12 +363,17 @@ h2 {
 .cardFoodFour {
   background-image: url("../ImgFood/resto.jpeg");
 }
+
+.cardFoodFive {
+  background-image: url("../ImgFood/sezame.jpeg");
+}
+
 /* Nature background */
 .cardNatureZero {
   background-image: url("../ImgNature/vincenne.jpg");
 }
 .cardNatureOne {
-  background-image: url("../ImgNature/canalDeLourq.jpg");
+  background-image: url("../ImgNature/canal.jpg");
 }
 .cardNatureTwo {
   background-image: url("../ImgNature/champsDeMars.jpg");
@@ -401,6 +384,10 @@ h2 {
 .cardNatureFour {
   background-image: url("../ImgNature/jardinage.jpg");
 }
+.cardNatureFive {
+  background-image: url("../ImgNature/boulogne.jpg");
+}
+
 ul {
   margin-top: 50px;
   display: grid;
@@ -451,7 +438,7 @@ ul .booking-card .book-container .content {
   height: 100%;
   width: 100%;
   transform: translateY(-200px);
-  transition: 0.3s;
+  transition: 0.1s;
 }
 ul .booking-card .book-container .content .btn {
   border: 3px solid white;
@@ -462,7 +449,7 @@ ul .booking-card .book-container .content .btn {
   font-size: 1.3em;
   color: white;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 ul .booking-card .book-container .content .btn:hover {
   background: white;
@@ -474,7 +461,7 @@ ul .booking-card .informations-container {
   padding: 20px;
   background: #f0f0f0;
   transform: translateY(206px);
-  transition: 0.3s;
+  transition: 0.1s;
 }
 ul .booking-card .informations-container .title {
   position: relative;
@@ -552,6 +539,8 @@ ul .booking-card .informations-container .more-information .disclaimer {
   margin-top: 20px;
   font-size: 0.8em;
   color: #7d7d7d;
+  min-height: 50px;
+  max-height: 100px;
 }
 ul .booking-card:hover::before {
   background: rgba(10, 72, 112, 0.6);
@@ -603,18 +592,26 @@ ul .booking-card:hover .informations-container .more-information {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (max-width: 768px) {
+  .disclaimer {
+    max-height: 50px;
+  }
+}
 
 @media screen and (max-width: 425px) {
   ul {
     grid-template-columns: repeat(1, 1fr);
   }
+  .box-holder,
+  #btnHome {
+    display: none;
+  }
 
-  .box-holder {
-    margin-top: 100px;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  h1 {
+    font-size: 50px;
+    padding: 200px 0 0 10vw;
+    position: relative;
+    right: 8px;
+    color: #f1f1f1;
   }
 }
