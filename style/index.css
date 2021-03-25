@@ -274,69 +274,74 @@ textarea{
 
 /* FOOTER */
 
-.my-footer-container{
-  width: 100%;
-  height: 140px;
-  border: 1px black solid;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25% ;
-  grid-template-rows: 50% 50% ;
-  grid-template-areas: 
-  "AP AP CAT LU"
-  "CP CP RS RS";
-  padding-top: 20px;
+.my-footer{
+background-color:#d4d0cd;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+padding: 45px 50px;
 }
 
-.footer-apropos{
-  grid-area: AP;
-  display: flex;
-  justify-content: flex-start;
-
-}
-
-.p-footer{
-  text-align: justify;
+.my-footer .footer-left p {
   margin: 0;
 }
 
-.footer-categories{
-  grid-area: CAT;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.my-footer p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease .25s;
 }
 
-.footer-liens{
-  grid-area: LU;
-  display: flex;
-  flex-direction: column;
+.my-footer p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease .25s;
 }
 
-.footer-copyright{
-  grid-area: CP;
-  display: flex;
-  align-items: flex-end;
+.my-footer .footer-links a::before{
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: black;
+  display: inline-block;
+  padding-right: 5px;
 }
 
-.footer-social{
-  grid-area: RS;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 80px;
+.my-footer .footer-links .link-1:before {
+  content: none;
 }
 
-h8{
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
+.my-footer .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
 }
 
-.footer-ul{
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
+.my-footer .footer-right a:hover{
+  transform:scale(1.1); -webkit-transform:scale(1.1);
+}
+
+.my-footer p.footer-links a:hover{
+  text-decoration:underline;
+}
+
+@media (max-width: 600px) {
+  .my-footer .footer-left, .footer-right {
+    text-align: center;
+  }
+  .my-footer .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .my-footer .footer-left p.footer-links {
+    line-height: 1.8;
+  }
 }
 
 /* Test Ancre pour remonter en haut de page */
