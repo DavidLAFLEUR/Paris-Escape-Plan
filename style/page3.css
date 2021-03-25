@@ -13,13 +13,13 @@ body {
 a {
     color: #51686D;
   }
+  /* HEADER */
   
   .sticky {
     position: fixed;
     top: 0;
     /* width: 100%; */
   }
-  /* HEADER */
   
   .header {
     top: 0;
