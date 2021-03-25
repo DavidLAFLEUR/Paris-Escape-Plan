@@ -327,15 +327,6 @@ h2 {
   color: #0a4870;
   font-weight: 500;
 }
-.cardNatureZero {
-  background-image: url("../ImgCard/bois\ vincenne.jpg");
-}
-.cardNatureOne {
-  background-image: url("../ImgCard/champsDeMars.jpg");
-}
-.cardNatureTwo {
-  background-image: url("../ImgCard/canalDeLourq.jpg");
-}
 
 .cardDetenteZero {
   background-image: url("../ImgMarker/dansLeNoir.jpg");
@@ -390,7 +381,7 @@ h2 {
   background-image: url("../ImgNature/vincenne.jpg");
 }
 .cardNatureOne {
-  background-image: url("../ImgNature/canalDeLourq.jpg");
+  background-image: url("../ImgNature/canal.jpg");
 }
 .cardNatureTwo {
   background-image: url("../ImgNature/champsDeMars.jpg");
