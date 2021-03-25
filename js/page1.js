@@ -23,7 +23,7 @@ const infowindow = new google.maps.InfoWindow({
 const vincenne =
   "<div style='float:left'><img class ='imgCarte' src='../ImgNature/vincenne.jpg'></div><div style='float:right; padding: 10px;'><b>Bois de vincenne</b><br/>Parc situé dans l'est de Paris. <br/> Ville, Paris</div>";
 const lourcq =
-  "<div style='float:left'><img class ='imgCarte' src='../ImgNature/canaDeLourq.jpg'></div><div style='float:right; padding: 10px;'><b>Parc de la vilette</b><br/>Métro :  211 Avenue Jean Jaurès,  <br/> Ville, Paris</div>";
+  "<div style='float:left'><img class ='imgCarte' src='../ImgNature/canal.jpg'></div><div style='float:right; padding: 10px;'><b>Canal de Lourcq</b><br/>Le canal de l’Ourcq est un canal du Bassin parisien <br/> Ville, Paris</div>";
 const maisonJardinage =
   "<div style='float:left'><img class ='imgCarte' src='../ImgNature/jardinage.jpg'></div><div style='float:right; padding: 10px;'><b>Maison du jardinage</b><br/>Jardins partagés, jardins pédagogiques<br/>Permis de végétaliser, jardins solidaires<br/> Ville, Paris</div>";
 const mars =
