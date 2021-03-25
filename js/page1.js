@@ -1,7 +1,7 @@
 // function filtre card
 function admSelectCheck(nameSelect) {
   console.log(nameSelect.value);
-  // si selection
+  // si  il ya selection
   var preElements = document.getElementsByClassName("prettyprint");
   if (nameSelect) {
     if (nameSelect.value == "start") {
