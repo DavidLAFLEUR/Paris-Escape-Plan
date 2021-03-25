@@ -10,9 +10,7 @@ body {
     background-color: #D5D7D8;
 }
 
-a {
-    color: #51686D;
-  }
+
   /* HEADER */
   
   .sticky {
@@ -34,6 +32,10 @@ a {
     padding: 0;
     list-style: none;
     overflow: hidden;
+  }
+
+  a {
+    color: #51686D;
   }
   
   .header li a {
@@ -200,6 +202,12 @@ h1 {
     padding-top: 50px
 }
 
+.speach p {
+  font-style: italic;
+  margin: 20px;
+
+}
+
 .logoPage3 {
      transform : translate(700px, -200px); 
 }
@@ -219,7 +227,7 @@ h1 {
     font-style: italic;
     text-align : justify;
     font-size: 18px;
-    padding-bottom: 10px;
+    padding: 10px;
     /* border: 1px solid black; */
     
 }
@@ -268,12 +276,12 @@ h1 {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     height: 332px;
     width:332px;
-    background: url("Group44.png");
+    background: url("/images/Group44.png");
     transition: all 1s ease-in-out;
 }
 .David:hover {
     transition: all 1s ease-in-out;
-    background: url("ken2.png");
+    background: url("/images/ken2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -283,12 +291,12 @@ h1 {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     height: 332px;
     width:332px;
-    background: url("Group42.png");
+    background: url("/images/Group42.png");
     transition: all 1s ease-in-out; 
 }
 
 .Mehdi:hover {
-    background: url("ryu2.png");
+    background: url("/images/ryu2.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 1s ease-in-out;
@@ -301,11 +309,11 @@ h1 {
     width:332px;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url("Group43.png");
+    background: url("/images/Group43.png");
     /* transition: all 1s ease-in-out; */
 }
 .AnneLaure:hover {
-    background: url("chunLi2.png");
+    background: url("/images/chunLi2.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 1s ease-in-out;
@@ -316,11 +324,11 @@ h1 {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     height: 332px;
     width:332px;
-    background: url("Group41.png");
+    background: url("/images/Group41.png");
     transition: all 1s ease-in-out;
 }
 .Benoit:hover {
-    background: url("sagat2.png");
+    background: url("/images/sagat2.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 1s ease-in-out;
@@ -331,11 +339,11 @@ h1 {
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     height: 332px;
     width:332px;
-    background: url("Group45.png");
+    background: url("/images/Group45.png");
     transition: all 1s ease-in-out;
 }
 .PaulE:hover {
-    background: url("bison2.png");
+    background: url("/images/bison2.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 1s ease-in-out;
@@ -373,10 +381,7 @@ h1 {
     padding: 10px;
  }
 
- .streetfighter {
-    margin-top: 80px;
-   
-}
+
 
 .speach {
     padding: 50px 20px 0px;
@@ -401,7 +406,7 @@ h1 {
       }
 
     .speach p{
-        margin: 100px ;
+        margin: 80px ;
         text-align: center;
     }
 
@@ -409,7 +414,7 @@ h1 {
         margin: auto;
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
         border-radius: 105px;
-        width: 50%
+        width: 70%
     }
 
     .logoPage3 {
@@ -417,12 +422,28 @@ h1 {
     }
 
     .first {
-        width:50%;
+        width:80%;
+    }
+
+    .David, .AnneLaure, .Mehdi, .PaulE, .Benoit {
+      margin:auto;
     }
 
     
 }
 
+@media (max-width: 425px) {
+
+  .speach p{
+    margin: 30px ;
+}
+
+.streetfighter {
+  margin-top: 70px;
+ 
+}
+
+}
 
 
 @media (min-width: 768px) {
@@ -440,7 +461,7 @@ h1 {
     .header .menu-icon {
       display: none;
     }
-  }
+  
   
   .active {
     background-color: #e9e4e0;
@@ -450,4 +471,8 @@ h1 {
     width: 100%;
     /* height: 50px; */
   }
+
+}
+
+
   
