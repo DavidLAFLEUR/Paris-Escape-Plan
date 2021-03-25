@@ -1,238 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/index.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_12r8qbCQeqvZWHaDwVX7o");
-})();
-</script>
+    <link rel="stylesheet" href="./style/index.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_12r8qbCQeqvZWHaDwVX7o");
+      })();
+    </script>
 
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/index.css" />
 
-</head>
+    <link rel="stylesheet" href="./style/navBar.css" />
+  </head>
 
-<body>
-  <header class="header" id="myHeader">
-    <!-- <a href="" class="logo">CSS Nav</a> -->
-    <div class="logo">
-      <img src="./images/logo-location.png" alt="logo">
-  
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <body>
+    <header class="header" id="myHeader">
+      <!-- <a href="" class="logo">CSS Nav</a> -->
+      <div class="logo">
+        <img src="./images/logo-location.png" id="logoHeader" alt="logo" />
+        <p id="clock"></p>
+
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
 
         <ul class="menu">
-
           <li><a href="./index.html">Home</a></li>
 
           <li><a href="./html/page1.html">Bons plans</a></li>
 
           <li><a href="./html/page2.html">Out of Paris</a></li>
 
-        <li><a href="./html/page3.html">Our team</a></li>
+          <li><a href="./html/page3.html">Our team</a></li>
         </ul>
-    </div>
-</header>
+      </div>
+    </header>
 
     <section class="bienvenue">
-      
-      <h1>
-        PLAN ESACAPE PARIS
-      </h1>
-      
-      <img class="imagedeParis" src="./images/paris-at-sunset 1.png" alt="image de Paris"/>
-      
-      
+      <h1>PLAN ESACAPE PARIS</h1>
+
+      <img
+        class="imagedeParis"
+        src="./images/paris-at-sunset 1.png"
+        alt="image de Paris"
+      />
     </section>
-    
+
     <section class="NosBonsPlans">
-      
       <div class="bonplanstitle">
-        <img src="./images/logo-location.png" alt = "logo" class="logo1"/>
-        
-            <h2 class="bon-plans-h2">Explorez nos bons plan<br>rendez-vous sur la carte...</h2>  
+        <img src="./images/logo-location.png" alt="logo" class="logo1" />
 
-        </div>  
-        
-        <div class="boxbonplans">
-            <div class="bonsplans2">
+        <h2 class="bon-plans-h2">
+          Explorez nos bons plan<br />rendez-vous sur la carte...
+        </h2>
+      </div>
 
-            <div class="bonplan">
-                <a href="./html/page1.html">
-                    <img src = "./images/Group 13.png" alt="BonPlansFood" class="image"/>
-                </a>
-            </div>
+      <div class="boxbonplans">
+        <div class="bonsplans2">
+          <div class="bonplan">
+            <a href="./html/page1.html">
+              <img
+                src="./images/Group 13.png"
+                alt="BonPlansFood"
+                class="image"
+              />
+            </a>
+          </div>
 
-            <div class="bonplan">
-                <a href="./html/page1.html">
-                    <img src = "./images/Group 13 (1).png" alt = "BonPlansNature" class="image"/>
-                </a>
-            </div>   
+          <div class="bonplan">
+            <a href="./html/page1.html">
+              <img
+                src="./images/Group 13 (1).png"
+                alt="BonPlansNature"
+                class="image"
+              />
+            </a>
+          </div>
 
-            <div class="bonplan">
-                <a href="./html/page1.html">
-                    <img src = "./images/Group 13 (2).png" alt = "BonPlansDetente" class="image"/>
-                </a>
-            </div> 
-
-            </div>
-            
-            <div class="bonplans3">
-
-            <div class = "bonplan voyage">
-                <a href="./html/page1.html">
-                    <img src = "./images/Group 15.png" alt = "BonPlansVoyage" class="image"/>
-                </a>
-            </div>     
-
-            <div class="bonplan">
-                <a href = "./html/page1.html">
-                    <img src="./images/Group 17.png" alt = "BonPlansCulture" class="image"/>
-                </a>
-            </div>     
-            
-            </div>
+          <div class="bonplan">
+            <a href="./html/page1.html">
+              <img
+                src="./images/Group 13 (2).png"
+                alt="BonPlansDetente"
+                class="image"
+              />
+            </a>
+          </div>
         </div>
+
+        <div class="bonplans3">
+          <div class="bonplan voyage">
+            <a href="./html/page1.html">
+              <img
+                src="./images/Group 15.png"
+                alt="BonPlansVoyage"
+                class="image"
+              />
+            </a>
+          </div>
+
+          <div class="bonplan">
+            <a href="./html/page1.html">
+              <img
+                src="./images/Group 17.png"
+                alt="BonPlansCulture"
+                class="image"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="last">
+      <div class="lasttitles">
+        <img src="./images/logo-location.png" alt="logo" class="logo2" />
 
-        <div class="lasttitles">
+        <h2>
+          Les derniers sélectionnés<br />
+          Nous vous les recommandons
+        </h2>
+      </div>
 
-        <img src="./images/logo-location.png" alt="logo" class="logo2"/>
+      <div class="lasttips">
+        <div class="boxlasttips">
+          <a href="./html/page1.html">
+            <img
+              src="./images/Rectangle 13.3.png"
+              alt="PhotoFood"
+              class="image1"
+            />
+          </a>
 
-        <h2>Les derniers sélectionnés<br> Nous vous les recommandons</h2>
+          <h3>Titre 1</h3>
 
+          <p>
+            Description du bon plan food<br />Le bon plan food du jour<br />C'est
+            pas ici
+          </p>
         </div>
 
-        <div class="lasttips">
+        <div class="boxlasttips">
+          <a href="./html/page1.html">
+            <img
+              src="./images/Rectangle 13.2.png"
+              alt="PhotoDetente"
+              class="image1"
+            />
+          </a>
 
-            <div class = "boxlasttips">
-                <a href = "./html/page1.html">
-                    <img src="./images/Rectangle 13.3.png" alt = "PhotoFood" class="image1">
-                </a>
+          <h3>Titre 2</h3>
 
-                <h3>
-                    Titre 1
-                </h3>
-
-                <p>
-                    Description du bon plan food<br>Le bon plan food du jour<br>C'est pas ici  
-                </p>    
-            </div>
-
-            <div class = "boxlasttips">
-                <a href = "./html/page1.html">
-                    <img src="./images/Rectangle 13.2.png" alt = "PhotoDetente" class="image1">
-                </a>
-
-                <h3>
-                    Titre 2
-                </h3>
-
-                <p>
-                    Description du bon plan détente<br>Le Bon plan détente de la semaine<br>C'est par là
-                </p>
-            </div>
-
-            <div class = "boxlasttips">
-                <a href = "./html/page1.html">
-                    <img src ="./images/Rectangle 13.1.png" alt = "PhotoVoyage" class="image1">
-                </a>
-
-                <h3>
-                    Titre 3
-                </h3>
-
-                <p>
-                   Descripton du bon plan voyage<br>Lebon plan voyage de la semaine<br>C'est par ici
-                </p>
-            </div>
+          <p>
+            Description du bon plan détente<br />Le Bon plan détente de la
+            semaine<br />C'est par là
+          </p>
         </div>
+
+        <div class="boxlasttips">
+          <a href="./html/page1.html">
+            <img
+              src="./images/Rectangle 13.1.png"
+              alt="PhotoVoyage"
+              class="image1"
+            />
+          </a>
+
+          <h3>Titre 3</h3>
+
+          <p>
+            Descripton du bon plan voyage<br />Lebon plan voyage de la
+            semaine<br />C'est par ici
+          </p>
+        </div>
+      </div>
     </section>
 
-<!-- formulaire de contact -->
+    <!-- formulaire de contact -->
 
-<form class="my-form">
+    <form class="my-form">
+      <div class="my-form-container">
+        <div class="my-form-image">
+          <p>
+            Si vous voulez nous écrire, nous faire une suggestion ou tout
+            simplement rester en contact avec nous...
+          </p>
 
-  <div class="my-form-container">
+          <img
+            src="./images/undraw_contact_us_15o2 1.svg"
+            alt="Contact-Us"
+            class="Contact-Us"
+          />
+        </div>
 
-    <div class="my-form-image">
+        <div class="my-form-ul-container">
+          <ul class="my-form-ul">
+            <li>
+              <div class="my-form-ipt">
+                <label for="name">Nom</label>
+                <input type="text" id="name" />
 
-      <p>
-        Si vous voulez nous écrire, nous faire une suggestion ou tout simplement rester en contact avec nous...
-      </p>
+                <label for="texte">Prénom</label>
+                <input type="text" id="prenom" />
+              </div>
+            </li>
 
-      <img src="./images/undraw_contact_us_15o2 1.svg" alt="Contact-Us" class="Contact-Us"/>
-    </div>
+            <li>
+              <div class="my-form-ipt">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" />
 
-    <div class="my-form-ul-container">
-      <ul class="my-form-ul">
-        <li>
-          <div class="my-form-ipt">
-            <label for="name">Nom</label>
-            <input type="text" id="name">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="tel" />
+              </div>
+            </li>
 
-            <label for="texte">Prénom</label>
-            <input type="text" id="prenom">
-          </div>
-        </li>
+            <li>
+              <label for="Message">Message</label>
+              <textarea type="text" id="message"></textarea>
+            </li>
 
-        <li>
-          <div class="my-form-ipt">
-            <label for="email">E-mail</label>
-            <input type="email" id="email">
+            <li>
+              <div class="my-form-button">
+                <button id="sendmail" class="favorite" onclick="sendMail()">
+                  Envoyer
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
 
-            <label for="telephone">Téléphone</label>
-            <input type="tel" id="tel">
-          </div>
-        </li>
-
-        <li>
-          <label for="Message">Message</label>
-          <textarea type ="text" id="message"></textarea>
-        </li>
-
-        <li>
-          <div class="my-form-button">
-            <button id="sendmail" class = "favorite" onclick="sendMail()">Envoyer</button>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>   
-</form>
-
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="my-footer">
-
       <div class="footer-right">
-
         <a href="https://www.facebook.com">
-          <img src="/images/icn_facebook.png" alt="Facebook">
-        </a>  
+          <img src="/images/icn_facebook.png" alt="Facebook" />
+        </a>
 
         <a href="https://www.instagram.com/?hl=fr">
-          <img src="images/icn_insta2.png" alt="Instagram">
-        </a> 
-        
+          <img src="images/icn_insta2.png" alt="Instagram" />
+        </a>
+
         <a href="https://www.twitter.com">
-          <img src="/images/icn_twitter.png" alt="Twitter">
+          <img src="/images/icn_twitter.png" alt="Twitter" />
         </a>
 
         <a href="https://www.snapchat.com" alt="SnapChat">
-          <img src="/images/icn_snapchat.png">
+          <img src="/images/icn_snapchat.png" />
         </a>
-
       </div>
 
       <div class="footer-left">
-
         <p class="footer-links">
           <a class="link-1" href="index.html">Home</a>
           <a href="./html/page1.html">Bon Plans Paris</a>
@@ -242,22 +276,18 @@ emailjs.init("user_12r8qbCQeqvZWHaDwVX7o");
         </p>
 
         <p>Copyright © 2021 All Right Reserved Plan Escape Paris</p>
-
       </div>
-
-
     </footer>
-<!-- Test Ancre pour remonter en haut de page -->
+    <!-- Test Ancre pour remonter en haut de page -->
 
-<div id="scroll_to_top">
-  <a href="#top"><img src="./images/Subtract.png" alt="Retourner en haut" /></a>
-</div>
+    <div id="scroll_to_top">
+      <a href="#top"
+        ><img src="./images/Subtract.png" alt="Retourner en haut"
+      /></a>
+    </div>
 
- 
-<script type="text/javascript" src="./js/index.js"></script>
-
-<script type="text/javascript" src="./js/page3.js"></script>
-
-</body>
-
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/moment.js"></script>
+    <script type="text/javascript" src="./js/page3.js"></script>
+  </body>
 </html>
