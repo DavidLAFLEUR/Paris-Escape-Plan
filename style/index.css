@@ -179,10 +179,6 @@ h1{
   margin-bottom: 25px;
 }
 
-.last{
- 
-}
-
 .lasttitles{
   display: flex;
   justify-content: center;
@@ -266,10 +262,6 @@ input, textarea{
   width: 450px;
 }
 
-.my-form-ipt{
-
-}
-
 input{
 display: flex;
 border-radius: 4px;
@@ -280,14 +272,7 @@ textarea{
   resize: none;
 }
 
-.my-form-button{
-
-}
-
 /* FOOTER */
-
-.my-footer{
-}
 
 .my-footer-container{
   width: 100%;
@@ -321,16 +306,10 @@ textarea{
   justify-content: center;
 }
 
-.footer-cat{
-  list-style: none;
-}
-
-
 .footer-liens{
   grid-area: LU;
   display: flex;
   flex-direction: column;
-  align-items: ;
 }
 
 .footer-copyright{
