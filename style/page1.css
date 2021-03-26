@@ -42,11 +42,11 @@
   font-size: 19px !important;
 }
 
-@media and and (max-width: 400px) {
+/* @media and and (max-width: 400px) {
   #caption {
     display: none;
   }
-}
+} */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -59,18 +59,16 @@ body {
 }
 @media screen and (max-width: 450px) {
   .accueil {
-    height: 85vh;
+    height: 45vh;
+    width: 100%;
+    background-color: #51686d;
   }
-}
-
-.fond-curvy {
-  position: absolute;
-  top: 600px;
-  left: 0px;
-  right: 0px;
-  bottom: 5%;
-  display: block;
-  margin: 0;
+  #titreMap {
+    margin-top: 50px !important;
+  }
+  .fond-curvy {
+    display: none;
+  }
 }
 
 .contenu {
@@ -595,10 +593,27 @@ ul .booking-card:hover .informations-container .more-information {
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 20px;
     padding: 200px 0 0 10vw;
     position: relative;
     right: 8px;
     color: #f1f1f1;
+  }
+}
+@media screen and (max-width: 360px) {
+  .fond-curvy {
+    display: none;
+  }
+
+  .select {
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 3em;
+    line-height: 3;
+    background: #b7b6b6;
+    overflow: hidden;
+    border-radius: 0.25em;
+    margin: 50px auto auto auto;
   }
 }
