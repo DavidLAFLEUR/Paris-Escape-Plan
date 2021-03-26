@@ -9,7 +9,7 @@ function update() {
     // console.log("je suis dans le if");
     covid = "Vous pouvez Circuler";
   } else {
-    // console.log("je suis dans le esle if");
+    // console.log("je suis dans le else");
     covid = "Attention Couvre Feu";
   }
   document.getElementById("clock").innerHTML = moment().format(
