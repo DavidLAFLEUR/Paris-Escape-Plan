@@ -1,6 +1,5 @@
 // function filtre card
 function admSelectCheck(nameSelect) {
-  console.log(nameSelect.value);
   // si  il ya selection
   var preElements = document.getElementsByClassName("prettyprint");
   if (nameSelect) {
@@ -183,7 +182,6 @@ function addMarker(marker) {
     "click",
     (function (marker1, content) {
       return function () {
-        console.log("marker click");
         infowindow.setContent(content); // infowindow pour afficher la bulle
         infowindow.open(map, marker1);
         map.panTo(this.getPosition());
@@ -199,7 +197,6 @@ function addMarker(marker) {
  */
 
 filterMarkers = function (category) {
-  console.log(category);
 
   let bounds = new google.maps.LatLngBounds();
   // boucle sur tableau  gmarkers1

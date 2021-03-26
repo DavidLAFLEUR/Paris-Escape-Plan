@@ -33,10 +33,8 @@ function sendMail(params) {
         title: "envoyé avec succès  !",
       });
       form();
-      console.log(res.status);
     },
     (error) => {
-      console.log(error.status);
       Toast.fire({
         icon: "error",
         title: "Une erreur s'est produite veuillez réessayer",
