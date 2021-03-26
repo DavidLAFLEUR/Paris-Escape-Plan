@@ -1,7 +1,3 @@
-document.getElementById("sendmail").addEventListener("click", function (event) {
-  event.preventDefault();
-  document.querySelector(".my-form").reset();
-});
 const Toast = Swal.mixin({
   toast: true,
   position: "top-end",
@@ -14,7 +10,16 @@ const Toast = Swal.mixin({
   },
 });
 
+// document.getElementById("sendmail").addEventListener("click", function (event) {
+//   event.preventDefault();
+//   document.querySelector(".my-form").reset();
+// });
+const form = () => {
+  document.querySelector("#formulaire").reset();
+}
+
 function sendMail(params) {
+  event.preventDefault();
   const tempParams = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
@@ -27,13 +32,14 @@ function sendMail(params) {
         icon: "success",
         title: "envoyé avec succès  !",
       });
+      form();
       console.log(res.status);
     },
     (error) => {
       console.log(error.status);
       Toast.fire({
         icon: "error",
-        title: "Une erreur c'est produite veuillez réessayer",
+        title: "Une erreur s'est produite veuillez réessayer",
       });
     }
   );
