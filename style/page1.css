@@ -37,102 +37,12 @@
   position: relative;
   margin: auto;
 }
-#building {
-  display: none;
-  /* display: flex;
-  width: 250px;
-  margin: 50px auto auto auto; */
-}
-#blocks {
+#clock {
   margin: auto;
-}
-.b {
-  width: 45px;
-  height: 45px;
-  border-radius: 5px;
-  margin: 10px;
-  position: relative;
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-#b1 {
-  background: #b7b6b6;
-  border: 3px solid #b7b6b6;
-  animation-name: b1;
-}
-#b2 {
-  background: #b7b6b6;
-  border: 3px solid #b7b6b6;
-  margin-left: 72.5px;
-  animation-name: b2;
-}
-#b3 {
-  background: #b7b6b6;
-  border: 3px solid #b7b6b6;
-  margin-top: -60px;
-  animation-name: b3;
-}
-#b4 {
-  background: #b7b6b6;
-  border: 3px solid #b7b6b6;
-  margin-left: 72.5px;
-  animation-name: b4;
-}
-
-@keyframes b1 {
-  0% {
-    left: 0px;
-    transform: rotate(0deg);
-  }
-  50% {
-    left: 62.5px;
-    bottom: 0px;
-    transform: rotate(90deg);
-  }
-  100% {
-    left: 62.5px;
-    bottom: -61.25px;
-    transform: rotate(90deg);
-  }
-}
-@keyframes b2 {
-  50% {
-    bottom: 0px;
-  }
-  100% {
-    bottom: -61.25px;
-  }
-}
-@keyframes b3 {
-  50% {
-    top: 0px;
-  }
-  100% {
-    top: -61.25px;
-  }
-}
-@keyframes b4 {
-  0% {
-    left: 0px;
-    transform: rotate(0deg);
-  }
-  50% {
-    left: -62.5px;
-    top: 0px;
-    transform: rotate(90deg);
-  }
-  100% {
-    left: -62.5px;
-    top: -61.25px;
-    transform: rotate(90deg);
-  }
+  font-size: 19px !important;
 }
 
 @media and and (max-width: 400px) {
-  #building {
-    width: 100%;
-  }
   #caption {
     display: none;
   }
@@ -155,6 +65,7 @@ body {
 
 .fond-curvy {
   position: absolute;
+  top: 600px;
   left: 0px;
   right: 0px;
   bottom: 5%;
@@ -266,7 +177,7 @@ select {
 #titreMap {
   color: #51686d;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 300px;
 }
 #titreSelection {
   color: #51686d;
@@ -557,75 +468,77 @@ ul .booking-card:hover .informations-container .more-information {
 }
 /* FOOTER */
 
-.my-footer{
-  background-color:#d4d0cd;
+.my-footer {
+  background-color: #d4d0cd;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   padding: 45px 50px;
+}
+
+.my-footer .footer-left p {
+  margin: 0;
+}
+
+.my-footer p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.my-footer p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.my-footer .footer-links a::before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: black;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.my-footer .footer-links .link-1:before {
+  content: none;
+}
+
+.my-footer .footer-right {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.my-footer .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.my-footer p.footer-links a:hover {
+  text-decoration: underline;
+}
+/* FIN FOOTER  */
+@media (max-width: 600px) {
+  .my-footer .footer-left,
+  .footer-right {
+    text-align: center;
   }
-  
-  .my-footer .footer-left p {
-    margin: 0;
-  }
-  
-  .my-footer p.footer-links {
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    margin: 0 0 10px;
-    padding: 0;
-    transition: ease .25s;
-  }
-  
-  .my-footer p.footer-links a {
-    display: inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color: inherit;
-    transition: ease .25s;
-  }
-  
-  .my-footer .footer-links a::before{
-    content: "·";
-    font-size: 20px;
-    left: 0;
-    color: black;
-    display: inline-block;
-    padding-right: 5px;
-  }
-  
-  .my-footer .footer-links .link-1:before {
-    content: none;
-  }
-  
   .my-footer .footer-right {
-    float: right;
-    margin-top: 6px;
-    max-width: 180px;
+    float: none;
+    margin: 0 auto 20px;
   }
-  
-  .my-footer .footer-right a:hover{
-    transform:scale(1.1); -webkit-transform:scale(1.1);
+  .my-footer .footer-left p.footer-links {
+    line-height: 1.8;
   }
-  
-  .my-footer p.footer-links a:hover{
-    text-decoration:underline;
-  }
-  /* FIN FOOTER  */
-  @media (max-width: 600px) {
-    .my-footer .footer-left, .footer-right {
-      text-align: center;
-    }
-    .my-footer .footer-right {
-      float: none;
-      margin: 0 auto 20px;
-    }
-    .my-footer .footer-left p.footer-links {
-      line-height: 1.8;
-    }
-  }
+}
 @media (max-width: 768px) {
   ul .booking-card::before {
     background: rgba(10, 72, 112, 0.6);

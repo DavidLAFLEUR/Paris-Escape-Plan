@@ -1,184 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style/page3.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style/page3.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" type="style/css" href="../style/page3.css"/>
-</head>
-<body>
- 
-
-
+    <link rel="stylesheet" type="style/css" href="../style/page3.css" />
+  </head>
+  <body>
     <header class="header" id="myHeader">
-        <!-- <a href="" class="logo">CSS Nav</a> -->
-        <div class="logo">
-          <img src="/images/logo-location.png" alt="logo">
-      
-          <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <!-- <a href="" class="logo">CSS Nav</a> -->
+      <div class="logo">
+        <img src="/images/logo-location.png" alt="logo" />
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
 
-            <ul class="menu">
+        <ul class="menu">
+          <p id="clock"></p>
+          <li><a href="/index.html">Home</a></li>
 
-              <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/page1.html">Bons plans</a></li>
 
-              <li><a href="/html/page1.html">Bons plans</a></li>
+          <li><a href="/html/page2.html">Out of Paris</a></li>
 
-              <li><a href="/html/page2.html">Out of Paris</a></li>
-
-            <li><a href="/html/page3.html">Our team</a></li>
-            </ul>
-        </div>
+          <li><a href="/html/page3.html">Our team</a></li>
+        </ul>
+      </div>
     </header>
-    
 
-<!-- 
+    <!-- 
 <div class="marquee-rtl">
     le contenu défilant 
     <div class="hashtagDefile" data-text="BONS BLANS PARIS DETENTE LOISIRS CULTURE FOOD VOYAGE OUT BONS PLANS">BONS BLANS PARIS DETENTE LOISIRS CULTURE FOOD VOYAGE OUT BONS PLANS PARIS DETENTE LOISIRS CULTURE FOOD VOYAGE OUT </div>
 </div> -->
 
-<div class = "crew">
-    <h1>OUR TEAM</h1>
-    <img  class= "first" src="/images/undraw_creative_team_r90h 1.svg" alt="img team svg">
-</div>
-
-<div class="team">
-    <img class = "nous" src="/images/photo team 1.png" alt="nous 5">
-    <div class= "speach">
-        <p>Nous avons construit ce site en 6 jours ! <br>
-            Qui sommes-nous ? <br> <br>
-            
-            5 combattants, futurs développeurs, plein d’idées et de créativité ! Elèves ayant intégrés en mars 2020 la formation développeur web et mobile à la Wild Code School Paris. </p> 
-            <img class = "logoPage3" src="/images/logo-location.png" alt="logo">
+    <div class="crew">
+      <h1>OUR TEAM</h1>
+      <img
+        class="first"
+        src="/images/undraw_creative_team_r90h 1.svg"
+        alt="img team svg"
+      />
     </div>
-</div>
 
-<section class="streetfighter">
+    <div class="team">
+      <img class="nous" src="/images/photo team 1.png" alt="nous 5" />
+      <div class="speach">
+        <p>
+          Nous avons construit ce site en 6 jours ! <br />
+          Qui sommes-nous ? <br />
+          <br />
 
-<div class="avatars3">
-    <div class="Perso">
-        <div class = "David"></div>
-        <div class="topoDavid">
-            <p class = prénom >DAVID</p>
-            <p>toujours à l’affût pour vous placer une petite prise de Karaté au milieu du code ! </p> 
+          5 combattants, futurs développeurs, plein d’idées et de créativité !
+          Elèves ayant intégrés en mars 2020 la formation développeur web et
+          mobile à la Wild Code School Paris.
+        </p>
+        <img class="logoPage3" src="/images/logo-location.png" alt="logo" />
+      </div>
+    </div>
+
+    <section class="streetfighter">
+      <div class="avatars3">
+        <div class="Perso">
+          <div class="David"></div>
+          <div class="topoDavid">
+            <p class="prénom">DAVID</p>
+            <p>
+              toujours à l’affût pour vous placer une petite prise de Karaté au
+              milieu du code !
+            </p>
             <div class="reseau">
-                <a href="https://www.facebook.com/WildCodeSchool" target="_blank"><img src="/images/icn_facebook.png" alt="icone facebook"></a> 
-                <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr" target="_blank"><img src="/images/icn_insta2.png" alt="icone instagram"></a>
-                <a href="https://www.linkedin.com/in/lafleur-david-57050b8b/" target="_blank"><img src="/images/icn_linkedin.png" alt="icone linkedin"></a> 
-                </div>
+              <a href="https://www.facebook.com/WildCodeSchool" target="_blank"
+                ><img src="/images/icn_facebook.png" alt="icone facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr"
+                target="_blank"
+                ><img src="/images/icn_insta2.png" alt="icone instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/lafleur-david-57050b8b/"
+                target="_blank"
+                ><img src="/images/icn_linkedin.png" alt="icone linkedin"
+              /></a>
+            </div>
+          </div>
         </div>
-    </div>
 
-<div class="Perso">
-    <div class = "Mehdi"> </div>
-    <div class="topoMehdi">
-        <p class = prénom >MEDHI </p>
-        <p>fait des hadoken sur vos projets javascript et des higthkick sur vos fichiers CSS </p> 
-        <div class="reseau">
-            <a href="https://www.facebook.com/WildCodeSchool" target="_blank"><img src="/images/icn_facebook.png" alt="icone facebook"></a> 
-            <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr" target="_blank"><img src="/images/icn_insta2.png" alt="icone instagram"></a>
-            <a href="https://www.linkedin.com/in/mehdi-bekri-37093b165/" target="_blank"><img src="/images/icn_linkedin.png" alt="icone linkedin"></a> 
-        </div>
-    </div>
-</div>
-
-<div class="Perso">
-    <div class = "AnneLaure"> </div>
-    <div class="topoAnneLaure">
-        <p class = prénom >ANNE-LAURE</p>
-        <p>va mettre ses aptitutes martiales au service du développement web</p> 
-        <div class="reseau">
-            <a href="https://www.facebook.com/WildCodeSchool" target="_blank"><img src="/images/icn_facebook.png" alt="icone facebook"></a> 
-            <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr" target="_blank"><img src="/images/icn_insta2.png" alt="icone instagram"></a>
-            <a href="https://www.linkedin.com/mynetwork/" target="_blank"><img src="/images/icn_linkedin.png" alt="icone linkedin"></a>
-        </div>
-    </div>
-</div>
-</div>
-
-
-<div class="avatars2">
-    <div class="Perso">
-        <div class = "Benoit"> </div>
-        <div class="topoBenoit">
-            <p class = prénom >BENOIT</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        <div class="reseau">
-                <a href="https://www.facebook.com/WildCodeSchool" target="_blank"><img src="/images/icn_facebook.png" alt="icone facebook"></a> 
-                <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr" target="_blank"><img src="/images/icn_insta2.png" alt="icone instagram"></a>
-                <a href="https://www.linkedin.com/in/benoit-da-costa-759936b5/" target="_blank"><img src="/images/icn_linkedin.png" alt="icone linkedin"></a> 
-            </div> 
-        </div>
-    </div>
-
-    <div class="Perso">
-        <div class = "PaulE"> </div>
-        <div class="topoPaulE">
-            <p class = prénom >PAUL-EMMANUEL</p>
-        <p>huitième kyu en CSS mais bientôt premier dan en GitHub</p>
+        <div class="Perso">
+          <div class="Mehdi"></div>
+          <div class="topoMehdi">
+            <p class="prénom">MEHDI</p>
+            <p>
+              fait des hadoken sur vos projets javascript et des higthkick sur
+              vos fichiers CSS
+            </p>
             <div class="reseau">
-                <a href="https://www.facebook.com/WildCodeSchool" target="_blank"><img src="/images/icn_facebook.png" alt="icone facebook"></a>
-                <a href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr" target="_blank"><img src="/images/icn_insta2.png" alt="icone instagram"></a>
-                <a href="https://www.linkedin.com/in/paul-emmanuel-legrand-3a07b4a9" target="_blank"><img src="/images/icn_linkedin.png" alt="icone linkedin"></a>
-         </div>  
+              <a href="https://www.facebook.com/WildCodeSchool" target="_blank"
+                ><img src="/images/icn_facebook.png" alt="icone facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr"
+                target="_blank"
+                ><img src="/images/icn_insta2.png" alt="icone instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/mehdi-bekri-37093b165/"
+                target="_blank"
+                ><img src="/images/icn_linkedin.png" alt="icone linkedin"
+              /></a>
+            </div>
+          </div>
         </div>
-    </div>
-</div>
-</section>
 
-<footer class="my-footer">
+        <div class="Perso">
+          <div class="AnneLaure"></div>
+          <div class="topoAnneLaure">
+            <p class="prénom">ANNE-LAURE</p>
+            <p>
+              va mettre ses aptitutes martiales au service du développement web
+            </p>
+            <div class="reseau">
+              <a href="https://www.facebook.com/WildCodeSchool" target="_blank"
+                ><img src="/images/icn_facebook.png" alt="icone facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr"
+                target="_blank"
+                ><img src="/images/icn_insta2.png" alt="icone instagram"
+              /></a>
+              <a href="https://www.linkedin.com/mynetwork/" target="_blank"
+                ><img src="/images/icn_linkedin.png" alt="icone linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="footer-right">
+      <div class="avatars2">
+        <div class="Perso">
+          <div class="Benoit"></div>
+          <div class="topoBenoit">
+            <p class="prénom">BENOIT</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="reseau">
+              <a href="https://www.facebook.com/WildCodeSchool" target="_blank"
+                ><img src="/images/icn_facebook.png" alt="icone facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr"
+                target="_blank"
+                ><img src="/images/icn_insta2.png" alt="icone instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/benoit-da-costa-759936b5/"
+                target="_blank"
+                ><img src="/images/icn_linkedin.png" alt="icone linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
 
-      <a href="https://www.facebook.com">
-        <img src="/images/icn_facebook.png" alt="Facebook">
-      </a>  
+        <div class="Perso">
+          <div class="PaulE"></div>
+          <div class="topoPaulE">
+            <p class="prénom">PAUL-EMMANUEL</p>
+            <p>huitième kyu en CSS mais bientôt premier dan en GitHub</p>
+            <div class="reseau">
+              <a href="https://www.facebook.com/WildCodeSchool" target="_blank"
+                ><img src="/images/icn_facebook.png" alt="icone facebook"
+              /></a>
+              <a
+                href="https://www.instagram.com/wildcodeschoolofficial/?hl=fr"
+                target="_blank"
+                ><img src="/images/icn_insta2.png" alt="icone instagram"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/paul-emmanuel-legrand-3a07b4a9"
+                target="_blank"
+                ><img src="/images/icn_linkedin.png" alt="icone linkedin"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <a href="https://www.instagram.com/?hl=fr">
-        <img src="images/icn_insta2.png" alt="Instagram">
-      </a> 
-      
-      <a href="https://www.twitter.com">
-        <img src="/images/icn_twitter.png" alt="Twitter">
-      </a>
+    <footer class="my-footer">
+      <div class="footer-right">
+        <a href="https://www.facebook.com">
+          <img src="../images/icn_facebook.png" alt="Facebook" />
+        </a>
 
-      <a href="https://www.snapchat.com" alt="SnapChat">
-        <img src="/images/icn_snapchat.png">
-      </a>
+        <a href="https://www.instagram.com/?hl=fr">
+          <img src="../images/icn_insta2.png" alt="Instagram" />
+        </a>
 
-    </div>
+        <a href="https://www.twitter.com">
+          <img src="../images/icn_twitter.png" alt="Twitter" />
+        </a>
 
-    <div class="footer-left">
+        <a href="https://www.snapchat.com" alt="SnapChat">
+          <img src="../images/icn_snapchat.png" />
+        </a>
+      </div>
 
-      <p class="footer-links">
-        <a class="link-1" href="index.html">Home</a>
+      <div class="footer-left">
+        <p class="footer-links">
+          <a class="link-1" href="index.html">Home</a>
 
-        <a href="./html/page1.html">Bon Plans Paris</a>
+          <a href="../html/page1.html">Bon Plans Paris</a>
 
-        <a href="./html/page2.html">Bon Plans Voyage</a>
+          <a href="../html/page2.html">Bon Plans Voyage</a>
 
-        <a href="./html/page3.html">Notre équipe</a>
-        
-        <a href="./html/page4.html">C.G.U.</a>
-      </p>
+          <a href="../html/page3.html">Notre équipe</a>
 
-      <p>Copyright © 2021 All Right Reserved Plan Escape Paris</p>
+          <a href="../html/page4.html">C.G.U.</a>
+        </p>
 
-    </div>
+        <p class="copyright">
+          Copyright © 2021 All Right Reserved Plan Escape Paris
+        </p>
+      </div>
+    </footer>
 
-
-  </footer>
-
-
-
-<script src="https://unpkg.com/scrollreveal"></script>
-<script type="text/javascript" src="../js/page3.js"></script>
-</body>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="../js/page3.js"></script>
+    <script src="../js/moment.js"></script>
+    <script src="../js/scroll.js"></script>
+  </body>
 </html>

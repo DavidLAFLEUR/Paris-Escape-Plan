@@ -13,7 +13,7 @@ function update() {
     covid = "Attention Couvre Feu";
   }
   document.getElementById("clock").innerHTML = moment().format(
-    `[${covid}] D MMMM YYYY HH:mm:ss `
+    `[Date:] DD/MM/YYYY  HH:mm:ss [${covid}]     `
   );
 }
 

@@ -4,8 +4,9 @@
  html,
     body {
       height: 100%;
-      width:100vw;
+      width:auto;
       font-family: 'Lato', sans;
+      margin: 0;
     }
 
     h1 {
@@ -100,12 +101,12 @@ color:black;
 }
 
 div.text-grand-card {
-    overflow: scroll;
+    overflow: auto;
 
 }
 
 div.text-petite-card {
-    overflow: scroll;
+    overflow: auto;
 }
 
 
@@ -134,12 +135,8 @@ border-radius: 10px 0px 0px 10px;
     background-position: bottom;
     background-repeat: no-repeat;
     padding-bottom: 250px;
-<<<<<<< HEAD
-    width: 100%;
-  
-=======
     position:relative;
->>>>>>> 00b24cbbe94639e385ac7166f82664d3032fbe42
+    background-size: cover;
   }
   
   .text-petite-card {
@@ -184,7 +181,7 @@ border-radius: 10px 0px 0px 10px;
         flex-direction: column;
         align-items: center;
         width:60vw;
-        height:60vw;
+        height:40vw;
         margin-bottom: 200px;
         box-shadow: none;;
     }
@@ -266,7 +263,6 @@ border-radius: 10px 0px 0px 10px;
     bottom:0;
     position:absolute;
 }
-<<<<<<< HEAD
 /* FOOTER */
 .my-footer{
     background-color:#d4d0cd;
@@ -339,7 +335,6 @@ border-radius: 10px 0px 0px 10px;
     }
   }
   /* FIN FOOTER */
-=======
 
 #my-image-front {
     bottom:0;
@@ -369,4 +364,5 @@ border-radius: 10px 0px 0px 10px;
                 justify-content: center;
             }
      }
->>>>>>> 00b24cbbe94639e385ac7166f82664d3032fbe42
+
+   

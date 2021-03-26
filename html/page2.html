@@ -7,14 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les bon plans voyages</title>
     <link rel="stylesheet" href="../style/page2.css" />
+    <link rel="stylesheet" href="../style/navBar.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+  ></script>
 </head>
 
 <body>
-
+    <header class="header" id="myHeader">
+   
+        <div class="logo">
+          <img src="../images/logo-location.png" id="logoHeader" alt="logo" />
+          <p id="clock"></p>
+  
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+          </label>
+  
+          <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+  
+            <li><a href="../html/page1.html">Bons plans</a></li>
+  
+            <li><a href="../html/page2.html">Out of Paris</a></li>
+  
+            <li><a href="../html/page3.html">Our team</a></li>
+          </ul>
+        </div>
+      </header>
     <!-- Carroussel -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -103,19 +130,19 @@
       <div class="footer-right">
 
         <a href="https://www.facebook.com">
-          <img src="/images/icn_facebook.png" alt="Facebook">
+          <img src="../images/icn_facebook.png" alt="Facebook">
         </a>  
 
         <a href="https://www.instagram.com/?hl=fr">
-          <img src="images/icn_insta2.png" alt="Instagram">
+          <img src="../images/icn_insta2.png" alt="Instagram">
         </a> 
         
         <a href="https://www.twitter.com">
-          <img src="/images/icn_twitter.png" alt="Twitter">
+          <img src="../images/icn_twitter.png" alt="Twitter">
         </a>
 
         <a href="https://www.snapchat.com" alt="SnapChat">
-          <img src="/images/icn_snapchat.png">
+          <img src="../images/icn_snapchat.png">
         </a>
 
       </div>
@@ -123,11 +150,19 @@
       <div class="footer-left">
 
         <p class="footer-links">
+<<<<<<< HEAD
           <a class="link-1" href="/index.html">Home</a>
           <a href="./html/page1.html">Bon Plans Paris</a>
           <a href="./html/page2.html">Bon Plans Voyage</a>
           <a href="./html/page3.html">Notre équipe</a>
           <a href="./html/page4.html">C.G.U.</a>
+=======
+          <a class="link-1" href="../index.html">Home</a>
+          <a href="../html/page1.html">Bon Plans Paris</a>
+          <a href="../html/page2.html">Bon Plans Voyage</a>
+          <a href="../html/page3.html">Notre équipe</a>
+          <a href="../html/page4.html">C.G.U.</a>
+>>>>>>> dev
         </p>
 
         <p>Copyright © 2021 All Right Reserved Plan Escape Paris</p>
@@ -141,6 +176,8 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="../js/page2.js"></script>
+    <script type="text/javascript" src="../js/page3.js"></script>
+    <script  src="../js/moment.js"></script>
 </body>
 
 </html>
