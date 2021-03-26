@@ -277,12 +277,12 @@ h1 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   height: 332px;
   width: 332px;
-  background: url("/images/Group44.png");
+  background: url("../images/Group44.png");
   transition: all 1s ease-in-out;
 }
 .David:hover {
   transition: all 1s ease-in-out;
-  background: url("/images/ken2.png");
+  background: url("../images/ken2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -292,12 +292,12 @@ h1 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   height: 332px;
   width: 332px;
-  background: url("/images/Group42.png");
+  background: url("../images/Group42.png");
   transition: all 1s ease-in-out;
 }
 
 .Mehdi:hover {
-  background: url("/images/ryu2.png");
+  background: url("../images/ryu2.png");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 1s ease-in-out;
@@ -310,11 +310,11 @@ h1 {
   width: 332px;
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("/images/Group43.png");
+  background: url("../images/Group43.png");
   /* transition: all 1s ease-in-out; */
 }
 .AnneLaure:hover {
-  background: url("/images/chunLi2.png");
+  background: url("../images/chunLi2.png");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 1s ease-in-out;
@@ -325,11 +325,11 @@ h1 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   height: 332px;
   width: 332px;
-  background: url("/images/Group41.png");
+  background: url("../images/Group41.png");
   transition: all 1s ease-in-out;
 }
 .Benoit:hover {
-  background: url("/images/sagat2.png");
+  background: url("../images/sagat2.png");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 1s ease-in-out;
@@ -340,11 +340,11 @@ h1 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   height: 332px;
   width: 332px;
-  background: url("/images/Group45.png");
+  background: url("../images/Group45.png");
   transition: all 1s ease-in-out;
 }
 .PaulE:hover {
-  background: url("/images/bison2.png");
+  background: url("../images/bison2.png");
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 1s ease-in-out;
