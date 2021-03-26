@@ -38,6 +38,7 @@ h1 {
   margin-top: 60px;
   margin-bottom: 60px;
   font-size: clamp(18px, 5vw, 25px) !important;
+  color: #51686d;
 }
 
 .logo1 {
@@ -79,6 +80,10 @@ h1 {
   margin-top: 60px;
 }
 
+.lasttitles h2 {
+  color: #51686d;
+}
+
 .image1 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
@@ -88,6 +93,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
+  color: #51686d ;
 }
 
 .logo2 {
@@ -102,6 +108,10 @@ p {
 
 h3 {
   text-align: center;
+}
+
+span {
+  font-style: italic;
 }
 
 /* Formulaire de contact */
