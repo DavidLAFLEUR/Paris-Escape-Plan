@@ -75,16 +75,20 @@ body {
   position: relative;
   z-index: 1000;
 }
+
 h1 {
-  font-size: 90px;
+  font-size: 48px;
   padding: 200px 0 0 10vw;
   position: relative;
   right: 8px;
   color: #f1f1f1;
+  font: Oswald, sans-serif !important;
 }
+
+
+
 p {
   font-size: 25px;
-
   margin: 7px 0;
   color: #1b1919;
 }
